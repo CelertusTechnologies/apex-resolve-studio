@@ -118,8 +118,8 @@
   .hairline { border-top: 1px solid oklch(0.3 0.005 250 / 0.15); }
   .grid-bg {
     background-image:
-      linear-gradient(oklch(0.4 0.005 250 / 0.08) 1px, transparent 1px),
-      linear-gradient(90deg, oklch(0.4 0.005 250 / 0.08) 1px, transparent 1px);
+      linear-gradient(oklch(0.3 0.005 250 / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(0.3 0.005 250 / 0.06) 1px, transparent 1px);
     background-size: 80px 80px;
   }
   .shadow-luxe { box-shadow: var(--shadow-luxe); }
