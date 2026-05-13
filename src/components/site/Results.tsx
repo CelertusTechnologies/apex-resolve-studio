@@ -29,10 +29,10 @@ function Counter({ to, suffix = "", prefix = "" }: { to: number; suffix?: string
 
 export function Results() {
   const stats = [
-    { v: 4.8, s: "B+", p: "$", l: "Recovered for clients" },
-    { v: 2400, s: "+", p: "", l: "Matters resolved" },
-    { v: 98, s: "%", p: "", l: "Favourable outcomes" },
-    { v: 37, s: "", p: "", l: "Years of practice" },
+    { v: 15, s: "+", p: "", l: "Years of Experience" },
+    { v: 500, s: "+", p: "", l: "Cases Resolved" },
+    { v: 98, s: "%", p: "", l: "Favourable Outcomes" },
+    { v: 9, s: "", p: "", l: "Legal Specialists" },
   ];
   return (
     <section id="results" className="relative py-32 lg:py-44 border-t border-border/50">
@@ -40,7 +40,7 @@ export function Results() {
         <Reveal>
           <SectionLabel>By the Numbers</SectionLabel>
           <h2 className="mt-8 font-serif text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1]">
-            Outcomes — measured,<br /><em className="text-gold not-italic font-light">not advertised.</em>
+            Proven results —<br /><em className="text-gold not-italic font-light">built on trust.</em>
           </h2>
         </Reveal>
         <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border/40 rounded-2xl overflow-hidden">

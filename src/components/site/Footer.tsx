@@ -1,4 +1,4 @@
-import { Scale, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
@@ -6,13 +6,17 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12 pb-20">
           <div className="lg:col-span-5 space-y-6">
-            <div className="flex items-center gap-2.5">
-              <Scale className="h-5 w-5 text-gold" strokeWidth={1.5} />
-              <span className="font-serif text-2xl">Ashford <span className="text-gold">&</span> Vance</span>
+            {/* VD Legal brand mark */}
+            <div className="flex items-center gap-3">
+              <div className="flex items-center justify-center h-9 w-9 rounded-full border border-gold/50">
+                <span className="font-serif text-base font-semibold text-gold">VD</span>
+              </div>
+              <span className="font-serif text-2xl">VD <span className="text-gold">Legal</span></span>
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-              International counsel for the world's most consequential matters.
-              Established 1987.
+              Advocates &amp; Solicitors — providing top-tier legal services with
+              integrity, expertise, and an unwavering commitment to justice.
+              New Delhi, India.
             </p>
             <div className="flex gap-3 pt-2">
               {[Linkedin, Twitter, Instagram].map((I, i) => (
@@ -22,16 +26,16 @@ export function Footer() {
               ))}
             </div>
           </div>
-          <FooterCol title="Practice" items={["Corporate", "Litigation", "Criminal Defence", "IP", "Real Estate", "Family"]} />
-          <FooterCol title="Firm" items={["About", "Counsel", "Careers", "Insights", "Press"]} />
-          <FooterCol title="Offices" items={["New York", "London", "Geneva", "Singapore", "Dubai", "Hong Kong"]} />
+          <FooterCol title="Practice Areas" items={["Corporate Law", "Real Estate Law", "Civil Litigation", "Criminal Litigation", "Family Law", "Intellectual Property"]} />
+          <FooterCol title="The Firm" items={["About Us", "Our Team", "Our Commitment", "Careers", "News & Insights"]} />
+          <FooterCol title="Get In Touch" items={["Book Consultation", "info@vdlegal.in", "+91 (011) 4567 8900", "New Delhi, India"]} />
         </div>
 
         <div className="hairline pt-8 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Ashford &amp; Vance LLP. Attorney advertising. Prior results do not guarantee a similar outcome.</div>
+          <div>© {new Date().getFullYear()} VD Legal — Advocates &amp; Solicitors. All rights reserved. Registered with Bar Council of Delhi.</div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground">Privacy</a>
-            <a href="#" className="hover:text-foreground">Terms</a>
+            <a href="#" className="hover:text-foreground">Privacy Policy</a>
+            <a href="#" className="hover:text-foreground">Terms of Service</a>
             <a href="#" className="hover:text-foreground">Disclaimer</a>
           </div>
         </div>

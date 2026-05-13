@@ -14,10 +14,10 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ashford & Vance — International Legal Counsel" },
-      { name: "description", content: "Boutique international law firm. Corporate, litigation, criminal defence, IP, real estate and family counsel for institutions, founders and families." },
-      { property: "og:title", content: "Ashford & Vance — International Legal Counsel" },
-      { property: "og:description", content: "Defending legacies. Building precedent. A boutique international law firm established 1987." },
+      { title: "VD Legal — Advocates & Solicitors | New Delhi" },
+      { name: "description", content: "VD Legal is a premier law firm in New Delhi offering comprehensive legal services across Corporate Law, Real Estate, Civil & Criminal Litigation, Family Law, and Intellectual Property. Over 15 years of trusted legal expertise." },
+      { property: "og:title", content: "VD Legal — Advocates & Solicitors" },
+      { property: "og:description", content: "Defending Rights. Delivering Justice. VD Legal — Advocates & Solicitors, New Delhi, India." },
     ],
   }),
   component: Index,

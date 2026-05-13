@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Phone } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/vd_hero.png";
 
 export function Hero() {
   return (
@@ -9,16 +9,20 @@ export function Hero() {
       <div className="absolute inset-0 -z-10">
         <img
           src={heroImg}
-          alt="Law firm interior"
+          alt="VD Legal — Advocates & Solicitors"
           width={1920}
           height={1080}
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className="absolute inset-0 h-full w-full object-cover opacity-50"
+          style={{ objectPosition: "left center" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
-        <div className="absolute inset-0 grid-bg opacity-30" />
+        {/* Left fade: gavel photo stays visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
+        <div className="absolute inset-0 grid-bg opacity-20" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-44 pb-32 lg:pt-56 lg:pb-40">
+        {/* Top label */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -26,19 +30,35 @@ export function Hero() {
           className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground mb-10"
         >
           <span className="h-px w-10 bg-gold/60" />
-          Established 1987 — International Counsel
+          Advocates &amp; Solicitors — New Delhi, India
+        </motion.div>
+
+        {/* Badge / VD mark */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.05 }}
+          className="mb-8 inline-flex items-center gap-3"
+        >
+          <div className="flex items-center justify-center h-14 w-14 rounded-full border border-gold/50 shadow-glow">
+            <span className="font-serif text-xl font-semibold text-gold">VD</span>
+          </div>
+          <div>
+            <div className="font-serif text-lg text-gold">VD Legal</div>
+            <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Established — 2009</div>
+          </div>
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="font-serif text-[clamp(3rem,8vw,7.5rem)] leading-[0.95] tracking-tight max-w-5xl"
+          className="font-serif text-[clamp(3rem,7vw,7rem)] leading-[0.95] tracking-tight max-w-5xl"
         >
-          <span className="text-gradient">Defending legacies.</span>
+          <span className="text-gradient">Defending Rights.</span>
           <br />
-          <span className="italic font-light text-muted-foreground">Building </span>
-          <span className="text-gold italic font-light">precedent.</span>
+          <span className="italic font-light text-muted-foreground">Delivering </span>
+          <span className="text-gold italic font-light">Justice.</span>
         </motion.h1>
 
         <motion.p
@@ -47,9 +67,9 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.3 }}
           className="mt-10 max-w-xl text-base lg:text-lg text-muted-foreground leading-relaxed"
         >
-          A boutique international law firm representing founders, families and
-          institutions through their most consequential matters — with discretion,
-          precision and uncompromising standards.
+          A premier law firm committed to delivering top-tier legal services with
+          integrity and expertise. With over 15 years across multiple legal disciplines,
+          we advocate for our clients with passion and precision.
         </motion.p>
 
         <motion.div
@@ -68,14 +88,14 @@ export function Hero() {
             </span>
           </a>
           <a
-            href="tel:+10000000000"
+            href="tel:+911234567890"
             className="inline-flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors px-5 py-3"
           >
-            <Phone className="h-4 w-4" /> +1 (212) 555 0190
+            <Phone className="h-4 w-4" /> +91 (011) 4567 8900
           </a>
         </motion.div>
 
-        {/* Floating stats */}
+        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -83,10 +103,10 @@ export function Hero() {
           className="mt-24 lg:mt-32 grid grid-cols-2 md:grid-cols-4 gap-px glass rounded-2xl overflow-hidden"
         >
           {[
-            ["37", "Years of practice"],
-            ["2,400+", "Cases resolved"],
-            ["$4.8B", "Total recovered"],
-            ["19", "Jurisdictions"],
+            ["15+", "Years of Experience"],
+            ["500+", "Cases Resolved"],
+            ["98%", "Success Rate"],
+            ["9", "Legal Specialists"],
           ].map(([n, l]) => (
             <div key={l} className="bg-background/40 px-6 py-7">
               <div className="font-serif text-3xl lg:text-4xl text-gradient">{n}</div>

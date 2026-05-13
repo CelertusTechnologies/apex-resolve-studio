@@ -6,19 +6,19 @@ import { SectionLabel } from "./SectionLabel";
 
 const testimonials = [
   {
-    q: "When the SEC came knocking, Ashford & Vance moved faster, thought sharper and protected more than we believed possible. They are the only call to make.",
-    n: "Chairman, FTSE 100 Holding",
-    r: "Regulatory Defence",
+    q: "VD Legal handled our complex corporate restructuring with remarkable precision and foresight. Vishal and his team are the first call we make for any legal matter.",
+    n: "Managing Director, Leading NBFC",
+    r: "Corporate Law",
   },
   {
-    q: "An exceptional team. The kind of counsel you hope you never need — and feel profoundly fortunate to have when you do.",
-    n: "Founder, $2.4B Tech IPO",
-    r: "Corporate Counsel",
+    q: "When our property dispute seemed unwinnable, VD Legal's real estate team delivered a result beyond our expectations. Their expertise and dedication are unmatched.",
+    n: "Senior Partner, Delhi Real Estate Group",
+    r: "Real Estate Law",
   },
   {
-    q: "Margaret tried our case with surgical precision. Two days into trial the opposition folded. Worth every billable hour many times over.",
-    n: "GC, International Bank",
-    r: "Commercial Litigation",
+    q: "The team's command of intellectual property law protected our brand at a critical juncture. Professional, responsive and thorough throughout every stage.",
+    n: "Founder, Tech Startup",
+    r: "Intellectual Property",
   },
 ];
 
@@ -32,7 +32,7 @@ export function Testimonials() {
     <section className="relative py-32 lg:py-44 border-t border-border/50">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <Reveal>
-          <SectionLabel>In Their Words</SectionLabel>
+          <SectionLabel>Client Testimonials</SectionLabel>
         </Reveal>
 
         <div className="mt-16 relative glass-strong rounded-3xl p-10 lg:p-20 shadow-luxe overflow-hidden">
@@ -59,7 +59,7 @@ export function Testimonials() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={prev}
-                    aria-label="Previous"
+                    aria-label="Previous testimonial"
                     className="h-11 w-11 rounded-full border border-border flex items-center justify-center hover:bg-foreground hover:text-background transition-all"
                   >
                     <ChevronLeft className="h-4 w-4" />
@@ -69,7 +69,7 @@ export function Testimonials() {
                   </span>
                   <button
                     onClick={next}
-                    aria-label="Next"
+                    aria-label="Next testimonial"
                     className="h-11 w-11 rounded-full border border-border flex items-center justify-center hover:bg-foreground hover:text-background transition-all"
                   >
                     <ChevronRight className="h-4 w-4" />

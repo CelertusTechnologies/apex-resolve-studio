@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Scale } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
   { href: "#about", label: "About" },
-  { href: "#practice", label: "Practice" },
-  { href: "#attorneys", label: "Attorneys" },
+  { href: "#practice", label: "Practice Areas" },
+  { href: "#attorneys", label: "Our Team" },
   { href: "#results", label: "Results" },
   { href: "#contact", label: "Contact" },
 ];
@@ -45,9 +45,13 @@ export function Navbar() {
           )}
         >
           <a href="#top" className="flex items-center gap-2.5 group">
-            <Scale className="h-5 w-5 text-gold" strokeWidth={1.5} />
+            {/* VD Legal Emblem-style logo mark */}
+            <div className="relative flex items-center justify-center h-8 w-8">
+              <div className="absolute inset-0 rounded-full border border-gold/60 group-hover:border-gold transition-colors duration-300" />
+              <span className="font-serif text-sm font-semibold text-gold leading-none tracking-tight">VD</span>
+            </div>
             <span className="font-serif text-xl tracking-wide">
-              Ashford <span className="text-gold">&</span> Vance
+              VD <span className="text-gold">Legal</span>
             </span>
           </a>
           <nav className="hidden md:flex items-center gap-9">

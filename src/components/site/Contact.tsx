@@ -21,21 +21,21 @@ export function Contact() {
                 <Phone className="h-4 w-4 text-gold mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Direct Line</div>
-                  <a href="tel:+12125550190">+1 (212) 555 0190</a>
+                  <a href="tel:+911234567890" className="hover:text-gold transition-colors">+91 (011) 4567 8900</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
                 <Mail className="h-4 w-4 text-gold mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Email</div>
-                  <a href="mailto:counsel@ashfordvance.law">counsel@ashfordvance.law</a>
+                  <a href="mailto:info@vdlegal.in" className="hover:text-gold transition-colors">info@vdlegal.in</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
                 <MapPin className="h-4 w-4 text-gold mt-0.5" />
                 <div>
-                  <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Headquarters</div>
-                  <div>432 Park Avenue, 41st Floor<br />New York, NY 10022</div>
+                  <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Office</div>
+                  <div>New Delhi, India<br /><span className="text-muted-foreground text-xs">Near Supreme Court of India</span></div>
                 </div>
               </div>
             </div>
@@ -43,9 +43,9 @@ export function Contact() {
           <Reveal delay={0.2}>
             <div className="aspect-[4/3] rounded-xl overflow-hidden border border-border/60 grid-bg relative">
               <iframe
-                title="Office location"
+                title="VD Legal Office — New Delhi"
                 className="absolute inset-0 h-full w-full grayscale contrast-125 opacity-80"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-73.97%2C40.76%2C-73.96%2C40.77&layer=mapnik"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=77.19%2C28.62%2C77.22%2C28.64&layer=mapnik&marker=28.630%2C77.2090"
                 loading="lazy"
               />
             </div>
@@ -58,11 +58,15 @@ export function Contact() {
               onSubmit={(e) => { e.preventDefault(); setSent(true); }}
               className="glass-strong rounded-2xl p-8 lg:p-12 space-y-6 shadow-luxe"
             >
+              <div className="mb-6">
+                <div className="font-serif text-2xl text-gradient mb-1">Request a Consultation</div>
+                <p className="text-xs text-muted-foreground">All submissions are encrypted and protected by attorney-client privilege.</p>
+              </div>
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Full Name" name="name" required />
                 <Field label="Email Address" name="email" type="email" required />
-                <Field label="Phone" name="phone" type="tel" />
-                <Field label="Matter Type" name="type" placeholder="Corporate, Litigation..." />
+                <Field label="Phone Number" name="phone" type="tel" />
+                <Field label="Legal Matter Type" name="type" placeholder="Corporate, Litigation, Family..." />
               </div>
               <div>
                 <label className="text-xs uppercase tracking-widest text-muted-foreground">
@@ -72,17 +76,18 @@ export function Contact() {
                   required
                   rows={5}
                   className="mt-3 w-full bg-transparent border-b border-border focus:border-gold outline-none py-3 text-base resize-none transition-colors"
+                  placeholder="Please provide a brief overview of your legal requirement..."
                 />
               </div>
               <div className="pt-4 flex flex-wrap items-center justify-between gap-4">
                 <p className="text-xs text-muted-foreground max-w-xs">
-                  All submissions are encrypted and protected by attorney-client privilege.
+                  We respond to all enquiries within 24 hours on business days.
                 </p>
                 <button
                   type="submit"
                   className="group inline-flex items-center gap-3 bg-foreground text-background rounded-full pl-7 pr-3 py-3 text-sm font-medium hover:bg-foreground/90 transition-all"
                 >
-                  {sent ? "Message received" : "Request Consultation"}
+                  {sent ? "Message Received — We'll Be In Touch" : "Request Consultation"}
                   <span className="bg-background/10 rounded-full p-1.5 group-hover:rotate-45 transition-transform duration-500">
                     <ArrowUpRight className="h-3.5 w-3.5" />
                   </span>
