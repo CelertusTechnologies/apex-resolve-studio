@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Practice } from "@/components/site/Practice";
+import { Attorneys } from "@/components/site/Attorneys";
+import { WhyUs } from "@/components/site/WhyUs";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Results } from "@/components/site/Results";
+import { FAQ } from "@/components/site/FAQ";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Ashford & Vance — International Legal Counsel" },
+      { name: "description", content: "Boutique international law firm. Corporate, litigation, criminal defence, IP, real estate and family counsel for institutions, founders and families." },
+      { property: "og:title", content: "Ashford & Vance — International Legal Counsel" },
+      { property: "og:description", content: "Defending legacies. Building precedent. A boutique international law firm established 1987." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="relative bg-background text-foreground overflow-x-hidden">
+      <Navbar />
+      <Hero />
+      <About />
+      <Practice />
+      <Attorneys />
+      <WhyUs />
+      <Testimonials />
+      <Results />
+      <FAQ />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }

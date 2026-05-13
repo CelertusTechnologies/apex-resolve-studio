@@ -1,0 +1,68 @@
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { Reveal } from "./Reveal";
+import { SectionLabel } from "./SectionLabel";
+
+function Counter({ to, suffix = "", prefix = "" }: { to: number; suffix?: string; prefix?: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true });
+  const [n, setN] = useState(0);
+  useEffect(() => {
+    if (!inView) return;
+    let start: number | null = null;
+    const dur = 1800;
+    const step = (ts: number) => {
+      if (!start) start = ts;
+      const p = Math.min((ts - start) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setN(Math.round(eased * to));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [inView, to]);
+  return (
+    <span ref={ref} className="tabular-nums">
+      {prefix}{n.toLocaleString()}{suffix}
+    </span>
+  );
+}
+
+export function Results() {
+  const stats = [
+    { v: 4.8, s: "B+", p: "$", l: "Recovered for clients" },
+    { v: 2400, s: "+", p: "", l: "Matters resolved" },
+    { v: 98, s: "%", p: "", l: "Favourable outcomes" },
+    { v: 37, s: "", p: "", l: "Years of practice" },
+  ];
+  return (
+    <section id="results" className="relative py-32 lg:py-44 border-t border-border/50">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <Reveal>
+          <SectionLabel>By the Numbers</SectionLabel>
+          <h2 className="mt-8 font-serif text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1]">
+            Outcomes — measured,<br /><em className="text-gold not-italic font-light">not advertised.</em>
+          </h2>
+        </Reveal>
+        <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border/40 rounded-2xl overflow-hidden">
+          {stats.map((st, i) => (
+            <motion.div
+              key={st.l}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.8 }}
+              className="bg-background p-10 lg:p-14"
+            >
+              <div className="font-serif text-6xl lg:text-7xl text-gold leading-none">
+                <Counter to={st.v} suffix={st.s} prefix={st.p} />
+              </div>
+              <div className="text-xs uppercase tracking-widest text-muted-foreground mt-6">
+                {st.l}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
