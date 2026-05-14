@@ -3,14 +3,14 @@ import { SectionLabel } from "./SectionLabel";
 import supremeCourtImg from "@/assets/supreme_court.png";
 
 const credentials = [
-  { label: "Over 15 Years", sub: "of Experience" },
-  { label: "Wide Range", sub: "of Legal Services" },
-  { label: "Certified Legal", sub: "Practitioners" },
+  { label: "Supreme Court", sub: "& High Courts" },
+  { label: "NCLT / NCLAT", sub: "Tribunal Matters" },
+  { label: "Pan-India", sub: "6+ City Presence" },
 ];
 
 export function About() {
   return (
-    <section id="about" className="relative py-32 lg:py-44 border-t border-border/50 overflow-hidden">
+    <section id="about" className="relative py-16 lg:py-24 border-t border-border/50 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16 lg:gap-20 items-center">
 
         {/* Text Column */}
@@ -27,25 +27,26 @@ export function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our firm is committed to delivering top-tier legal services with integrity
-              and expertise. With years of experience across multiple legal disciplines,
-              we advocate for our clients with passion and precision.
+              VD Legal is a full-service law firm providing high-quality legal solutions
+              in multiple domains. Our work extends from the Supreme Court and High Courts
+              to District Courts, NCLT, NCLAT, and all judicial and quasi-judicial bodies.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-base text-muted-foreground leading-relaxed">
-              VD Legal was founded on a single conviction: that every individual
-              and institution deserves access to clear, effective, and strategic
-              legal solutions — delivered by practitioners who understand the
-              stakes and rise to meet them.
+              Established under Advocate Vishal Dabas, VD Legal is built on a single conviction:
+              that every individual and institution deserves access to clear, effective,
+              and strategic legal solutions — delivered by practitioners who understand
+              the stakes and rise to meet them. Our team serves clients across Delhi NCR,
+              Chandigarh, Haryana, Rajasthan, Himachal Pradesh, and Uttar Pradesh.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
             <div className="grid sm:grid-cols-3 gap-px hairline pt-10">
               {[
-                ["Mission", "To provide clear, effective, and strategic legal solutions."],
-                ["Vision", "Justice that is accessible, transparent, and fair for all."],
-                ["Method", "Precision advocacy across every legal discipline."],
+                ["Mission", "To provide clear, effective, and strategic legal solutions across every legal domain."],
+                ["Vision", "Justice that is accessible, transparent, and fair for all — in every court, for every client."],
+                ["Method", "Expert advocacy. Rigorous research. Precision-driven representation in all courts & tribunals."],
               ].map(([t, d]) => (
                 <div key={t} className="pt-6">
                   <div className="text-xs uppercase tracking-widest text-gold/80 mb-3">{t}</div>

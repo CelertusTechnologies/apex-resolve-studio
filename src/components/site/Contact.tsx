@@ -6,7 +6,7 @@ import { SectionLabel } from "./SectionLabel";
 export function Contact() {
   const [sent, setSent] = useState(false);
   return (
-    <section id="contact" className="relative py-32 lg:py-44 border-t border-border/50">
+    <section id="contact" className="relative py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5 space-y-12">
           <Reveal>
@@ -21,21 +21,21 @@ export function Contact() {
                 <Phone className="h-4 w-4 text-gold mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Direct Line</div>
-                  <a href="tel:+911234567890" className="hover:text-gold transition-colors">+91 (011) 4567 8900</a>
+                  <a href="tel:+919999651586" className="hover:text-gold transition-colors">+91-9999651586</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
                 <Mail className="h-4 w-4 text-gold mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Email</div>
-                  <a href="mailto:info@vdlegal.in" className="hover:text-gold transition-colors">info@vdlegal.in</a>
+                  <a href="mailto:vdlegaladvocate@gmail.com" className="hover:text-gold transition-colors">vdlegaladvocate@gmail.com</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
                 <MapPin className="h-4 w-4 text-gold mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Office</div>
-                  <div>New Delhi, India<br /><span className="text-muted-foreground text-xs">Near Supreme Court of India</span></div>
+                  <div>Chamber No. 209, Delhi High Court<br />New Delhi – 110003<br /><span className="text-muted-foreground text-xs">Near Supreme Court of India</span></div>
                 </div>
               </div>
             </div>

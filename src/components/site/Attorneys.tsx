@@ -1,22 +1,26 @@
 import { Linkedin, Mail } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
-import l1 from "@/assets/lawyer1.jpg";
-import l2 from "@/assets/lawyer2.jpg";
-import l3 from "@/assets/lawyer3.jpg";
-import l4 from "@/assets/lawyer4.jpg";
 import vishalDabas from "@/assets/vishal_dabas.png";
+import ravi from "@/assets/ravi.jpeg";
+import rahul from "@/assets/rahul.jpeg";
+import sahil from "@/assets/sahil.jpeg";
+import krishna from "@/assets/krishna.jpeg";
+import hemant from "@/assets/hemant.jpeg";
+import vivek from "@/assets/vivek.jpeg";
+import chirasha from "@/assets/chirasha.jpeg";
+import aishwarya from "@/assets/aishwarya.jpeg";
 
 const team = [
-  { img: vishalDabas, name: "Vishal Dabas", role: "Founder", focus: "Corporate Law · Litigation", featured: true },
-  { img: l3, name: "Ravi Mehrotra", role: "Senior Associate", focus: "PMLA / FEMA Specialist" },
-  { img: l1, name: "Rahul Ahlawat", role: "Senior Associate", focus: "Civil / Criminal Litigation Expert" },
-  { img: l2, name: "Sahil Dabas", role: "Associate", focus: "Real Estate Law Expert" },
-  { img: l4, name: "Krishna Dayama", role: "Senior Counsel", focus: "Senior Counsel for UOI" },
-  { img: l3, name: "Hemant Chauhan", role: "Associate", focus: "Corporate Law / Arbitration Specialist" },
-  { img: l1, name: "Vivek Rampal", role: "Consultant", focus: "Due Diligence Expert" },
-  { img: l2, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
-  { img: l4, name: "Aishwarya Sharma", role: "Associate", focus: "IPR Expert" },
+  { img: vishalDabas, name: "Vishal Dabas", role: "Founder & Managing Partner", focus: "Corporate Law · Litigation · Arbitration", featured: true },
+  { img: ravi, name: "Ravi Mehrotra", role: "Senior Associate", focus: "PMLA / FEMA Specialist" },
+  { img: rahul, name: "Rahul Ahlawat", role: "Senior Associate", focus: "Civil & Criminal Litigation Expert" },
+  { img: sahil, name: "Sahil Dabas", role: "Associate", focus: "Real Estate & RERA Specialist" },
+  { img: krishna, name: "Krishna Dayama", role: "Senior Counsel", focus: "Senior Counsel for Union of India" },
+  { img: hemant, name: "Hemant Chauhan", role: "Associate", focus: "Corporate Law & Arbitration Specialist" },
+  { img: vivek, name: "Vivek Rampal", role: "Consultant", focus: "Due Diligence & Risk Advisory Expert" },
+  { img: chirasha, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
+  { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert" },
 ];
 
 export function Attorneys() {
@@ -24,9 +28,9 @@ export function Attorneys() {
   const rest = team.slice(1);
 
   return (
-    <section id="attorneys" className="relative py-32 lg:py-44 border-t border-border/50">
+    <section id="attorneys" className="relative py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
             <SectionLabel>Our Team</SectionLabel>
             <h2 className="mt-8 font-serif text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1]">
@@ -53,7 +57,7 @@ export function Attorneys() {
                   width={900}
                   height={900}
                   loading="lazy"
-                  className="h-full w-full object-cover grayscale contrast-[1.05] transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                  className="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/80" />
               </div>
@@ -63,10 +67,12 @@ export function Attorneys() {
                   {founder.name}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-sm">
-                  With over 15 years of distinguished legal practice, Vishal Dabas founded
-                  VD Legal on the unwavering belief that every client deserves accessible,
-                  transparent, and expert legal representation. His expertise spans corporate
-                  law, litigation, and alternate dispute resolution.
+                  Founder & Managing Partner of VD Legal, Advocate Vishal Dabas is an alumnus
+                  of Campus Law Centre, University of Delhi. He specialises in Corporate Law,
+                  Civil & Criminal Litigation, Arbitration, and NCLT / NCLAT matters. He has
+                  appeared before the Supreme Court of India, Delhi High Court, and numerous
+                  District Courts and Tribunals, delivering precision advocacy and strategic
+                  legal solutions tailored to every client's needs.
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="flex gap-3">
@@ -77,7 +83,7 @@ export function Attorneys() {
                       <Mail className="h-3.5 w-3.5" />
                     </a>
                   </div>
-                  <span className="text-xs text-muted-foreground tracking-widest ml-2">Advocate, Bar Council of Delhi</span>
+                  <span className="text-xs text-muted-foreground tracking-widest ml-2">Advocate, Bar Council of Delhi · Campus Law Centre, DU</span>
                 </div>
               </div>
             </div>
@@ -96,7 +102,7 @@ export function Attorneys() {
                     width={768}
                     height={1024}
                     loading="lazy"
-                    className="h-full w-full object-cover grayscale contrast-[1.05] transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                    className="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">

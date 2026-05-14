@@ -2,9 +2,9 @@ import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/50 pt-24 pb-10">
+    <footer className="border-t border-border/50 pt-12 pb-8">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="grid lg:grid-cols-12 gap-12 pb-20">
+        <div className="grid lg:grid-cols-12 gap-10 pb-12">
           <div className="lg:col-span-5 space-y-6">
             {/* VD Legal brand mark */}
             <div className="flex items-center gap-3">
@@ -26,9 +26,9 @@ export function Footer() {
               ))}
             </div>
           </div>
-          <FooterCol title="Practice Areas" items={["Corporate Law", "Real Estate Law", "Civil Litigation", "Criminal Litigation", "Family Law", "Intellectual Property"]} />
+          <FooterCol title="Practice Areas" items={["Corporate Law", "Real Estate & RERA", "Civil & Criminal Litigation", "PMLA / FEMA", "Arbitration", "Insolvency & Bankruptcy", "IPR", "Taxation"]} />
           <FooterCol title="The Firm" items={["About Us", "Our Team", "Our Commitment", "Careers", "News & Insights"]} />
-          <FooterCol title="Get In Touch" items={["Book Consultation", "info@vdlegal.in", "+91 (011) 4567 8900", "New Delhi, India"]} />
+          <FooterCol title="Get In Touch" items={["Book Consultation", "vdlegaladvocate@gmail.com", "+91-9999651586", "Chamber No. 209, Delhi High Court"]} />
         </div>
 
         <div className="hairline pt-8 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">

@@ -21,7 +21,7 @@ export function Hero() {
         <div className="absolute inset-0 grid-bg opacity-20" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-44 pb-32 lg:pt-56 lg:pb-40">
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-44 pb-16 lg:pt-52 lg:pb-20">
         {/* Top label */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -30,7 +30,7 @@ export function Hero() {
           className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground mb-10"
         >
           <span className="h-px w-10 bg-gold/60" />
-          Advocates &amp; Solicitors — New Delhi, India
+          Advocates &amp; Solicitors — New Delhi, India · Where Expertise Meets Excellence
         </motion.div>
 
         {/* Badge / VD mark */}
@@ -67,9 +67,9 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.3 }}
           className="mt-10 max-w-xl text-base lg:text-lg text-muted-foreground leading-relaxed"
         >
-          A premier law firm committed to delivering top-tier legal services with
-          integrity and expertise. With over 15 years across multiple legal disciplines,
-          we advocate for our clients with passion and precision.
+          A premier full-service law firm established under the leadership of Advocate Vishal Dabas.
+          We deliver high-quality legal solutions across the Supreme Court of India, High Courts,
+          District Courts, NCLT, NCLAT, and all judicial and quasi-judicial bodies.
         </motion.p>
 
         <motion.div
@@ -88,10 +88,10 @@ export function Hero() {
             </span>
           </a>
           <a
-            href="tel:+911234567890"
+            href="tel:+919999651586"
             className="inline-flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors px-5 py-3"
           >
-            <Phone className="h-4 w-4" /> +91 (011) 4567 8900
+            <Phone className="h-4 w-4" /> +91-9999651586
           </a>
         </motion.div>
 
@@ -104,8 +104,8 @@ export function Hero() {
         >
           {[
             ["15+", "Years of Experience"],
-            ["500+", "Cases Resolved"],
-            ["98%", "Success Rate"],
+            ["6", "Cities Pan-India"],
+            ["14+", "Practice Areas"],
             ["9", "Legal Specialists"],
           ].map(([n, l]) => (
             <div key={l} className="bg-background/40 px-6 py-7">

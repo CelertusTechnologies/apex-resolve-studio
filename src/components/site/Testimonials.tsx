@@ -29,13 +29,13 @@ export function Testimonials() {
   const prev = () => setI((i - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="relative py-32 lg:py-44 border-t border-border/50">
+    <section className="relative py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel>Client Testimonials</SectionLabel>
         </Reveal>
 
-        <div className="mt-16 relative glass-strong rounded-3xl p-10 lg:p-20 shadow-luxe overflow-hidden">
+        <div className="mt-10 relative glass-strong rounded-3xl p-10 lg:p-16 shadow-luxe overflow-hidden">
           <Quote className="absolute top-10 right-10 h-32 w-32 text-foreground/[0.03]" strokeWidth={0.5} />
           <AnimatePresence mode="wait">
             <motion.blockquote

@@ -1,5 +1,6 @@
 import {
   Building2, Shield, Scale, Home, Heart, FileSearch, ArrowUpRight,
+  Landmark, Banknote, Briefcase, BookOpen, Users, RefreshCw, Gavel,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
@@ -14,40 +15,88 @@ const areas = [
   {
     icon: Home,
     title: "Real Estate Law",
-    desc: "Banking & financial services audit support, audit documentation, SOP & reporting, property disputes, transactions, and due diligence of properties.",
-    subs: ["Property Disputes", "Due Diligence", "Transactions"],
+    desc: "Property disputes, transactions, due diligence of properties, RERA matters, and banking & financial services audit documentation.",
+    subs: ["Property Disputes", "Due Diligence", "RERA Matters"],
   },
   {
     icon: Scale,
     title: "Civil / Criminal Litigation",
-    desc: "Dispute resolution, claims handling, criminal law litigation, and alternate dispute resolution across all major courts and tribunals.",
+    desc: "Dispute resolution, claims handling, criminal law litigation, and alternate dispute resolution across Supreme Court, High Courts, District Courts & tribunals.",
     subs: ["Dispute Resolution", "Criminal Litigation", "ADR"],
   },
   {
     icon: Heart,
-    title: "Family Law",
+    title: "Family & Matrimonial Law",
     desc: "Divorce, custody matters, estate planning, and comprehensive family legal services handled with utmost sensitivity and discretion.",
-    subs: ["Divorce & Custody", "Estate Planning", "Family Disputes"],
+    subs: ["Divorce & Custody", "Estate Planning", "Matrimonial Disputes"],
   },
   {
     icon: Shield,
-    title: "Intellectual Property",
+    title: "Intellectual Property Rights",
     desc: "Trademark, copyrights & patents litigation, alternate dispute resolution, and comprehensive IP strategy to protect your creative and commercial assets.",
     subs: ["Trademarks", "Patents & Copyrights", "IP Litigation"],
   },
   {
     icon: FileSearch,
     title: "Audit & Due Diligence",
-    desc: "Banking & financial services audit support, audit documentation, SOP & reporting, and comprehensive due diligence across all sectors.",
+    desc: "Banking & financial services audit support, SOP & reporting, comprehensive due diligence across all sectors, and risk control reviews.",
     subs: ["Financial Audits", "SOP & Reporting", "Due Diligence"],
+  },
+  {
+    icon: Landmark,
+    title: "PMLA / FEMA",
+    desc: "Prevention of Money Laundering Act matters, FEMA violations, ED proceedings, enforcement actions, and financial compliance advisory.",
+    subs: ["PMLA Defense", "FEMA Compliance", "ED Proceedings"],
+  },
+  {
+    icon: Gavel,
+    title: "Arbitration",
+    desc: "Domestic and international arbitration proceedings, arbitral award enforcement, and alternate dispute resolution before all major arbitral forums.",
+    subs: ["Domestic Arbitration", "International ADR", "Award Enforcement"],
+  },
+  {
+    icon: Banknote,
+    title: "Banking & Finance",
+    desc: "Banking litigation, loan recovery, NPA matters, banking regulatory compliance, and representation before DRTs, DRATs & RBI forums.",
+    subs: ["Loan Recovery", "NPA Matters", "DRT / DRAT"],
+  },
+  {
+    icon: RefreshCw,
+    title: "Insolvency & Bankruptcy",
+    desc: "Representation before NCLT and NCLAT in insolvency resolution proceedings, corporate restructuring, and IBC advisory for creditors and debtors.",
+    subs: ["NCLT / NCLAT", "IBC Advisory", "Corporate Restructuring"],
+  },
+  {
+    icon: Users,
+    title: "Service Law",
+    desc: "Central and state government service matters, departmental proceedings, CAT appeals, and employment disputes for public sector employees.",
+    subs: ["CAT Matters", "Departmental Proceedings", "Employment Disputes"],
+  },
+  {
+    icon: Briefcase,
+    title: "Consumer Law",
+    desc: "Consumer protection disputes before District, State, and National Consumer Disputes Redressal Commissions (NCDRC) across all sectors.",
+    subs: ["Consumer Disputes", "NCDRC", "Product Liability"],
+  },
+  {
+    icon: BookOpen,
+    title: "Constitutional Law",
+    desc: "Writ petitions before Supreme Court and High Courts, fundamental rights enforcement, and public interest litigation on constitutional matters.",
+    subs: ["Writ Petitions", "Fundamental Rights", "PIL"],
+  },
+  {
+    icon: Building2,
+    title: "Taxation",
+    desc: "Direct and indirect tax advisory, income tax litigation, GST disputes, customs & excise matters, and representation before tax tribunals.",
+    subs: ["Income Tax", "GST Disputes", "Tax Tribunals"],
   },
 ];
 
 export function Practice() {
   return (
-    <section id="practice" className="relative py-32 lg:py-44 border-t border-border/50">
+    <section id="practice" className="relative py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
             <SectionLabel>Practice Areas</SectionLabel>
             <h2 className="mt-8 font-serif text-5xl lg:text-6xl leading-[1] text-gradient max-w-3xl">
