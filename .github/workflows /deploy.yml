@@ -46,7 +46,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           timeout: 60s
-          source: "dist/*"
+          source: "dist/"
           target: "/var/www/apex-frontend"
 
       - name: Set proper permissions
