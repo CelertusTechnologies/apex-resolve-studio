@@ -55,15 +55,19 @@ export default defineConfig(({ command }) =>
         react(),
       ],
 
+      server: {
+        host: "0.0.0.0",
+        port: 4173,
+      },
+
       preview: {
         host: "0.0.0.0",
         port: 4173,
+        strictPort: true,
         allowedHosts: ["apex.celertus.com"],
       },
     },
 
-    {
-      server: { host: "::", port: 8080 },
-    },
+    {},
   ),
 );
