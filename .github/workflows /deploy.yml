@@ -75,3 +75,5 @@ jobs:
           script: |
             sudo systemctl reload nginx
             echo "Nginx reloaded successfully"
+
+            
