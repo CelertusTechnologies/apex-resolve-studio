@@ -21,6 +21,7 @@ export default defineConfig(({ command }) =>
       ...(command === "serve"
         ? { logLevel: "error" as const, clearScreen: false }
         : {}),
+
       resolve: {
         alias: { "@": `${process.cwd()}/src` },
         dedupe: [
@@ -32,9 +33,11 @@ export default defineConfig(({ command }) =>
           "@tanstack/query-core",
         ],
       },
+
       plugins: [
         tailwindcss(),
         tsconfigPaths({ projects: ["./tsconfig.json"] }),
+
         ...(command === "build"
           ? [
               cloudflare({
@@ -42,14 +45,23 @@ export default defineConfig(({ command }) =>
               }),
             ]
           : []),
+
         tanstackStart(
           mergeConfig(tanstackStartDefaults, {
             server: { entry: "server" },
           }),
         ),
+
         react(),
       ],
+
+      preview: {
+        host: "0.0.0.0",
+        port: 4173,
+        allowedHosts: ["apex.celertus.com"],
+      },
     },
+
     {
       server: { host: "::", port: 8080 },
     },
