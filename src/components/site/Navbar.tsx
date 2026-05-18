@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import vdLogo from "@/assets/vd_logo.png";
 
 const links = [
   { href: "#about", label: "About" },
@@ -45,12 +46,11 @@ export function Navbar() {
           )}
         >
           <a href="#top" className="flex items-center gap-2.5 group">
-            {/* VD Legal Emblem-style logo mark */}
-            <div className="relative flex items-center justify-center h-8 w-8">
-              <div className="absolute inset-0 rounded-full border border-gold/60 group-hover:border-gold transition-colors duration-300" />
-              <span className="font-serif text-sm font-semibold text-gold leading-none tracking-tight">VD</span>
+            {/* VD Legal Logo Image */}
+            <div className="relative flex items-center justify-center h-12 w-auto transition-transform duration-300 group-hover:scale-105">
+              <img src={vdLogo} alt="VD Legal Logo" className="h-full w-auto object-contain drop-shadow-md" />
             </div>
-            <span className="font-serif text-xl tracking-wide">
+            <span className="font-serif text-xl tracking-wide hidden lg:block">
               VD <span className="text-gold">Legal</span>
             </span>
           </a>

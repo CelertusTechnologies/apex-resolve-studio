@@ -13,7 +13,7 @@ const commitment = [
 
 export function WhyUs() {
   return (
-    <section className="relative py-16 lg:py-24 border-t border-border/50 overflow-hidden">
+    <section className="relative py-12 md:py-16 lg:py-24 border-t border-border/50 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20 -z-10" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -21,7 +21,7 @@ export function WhyUs() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
             <SectionLabel>Our Commitment</SectionLabel>
-            <h2 className="mt-8 font-serif text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1]">
+            <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1.1] md:leading-[1]">
               Our Commitment
               <br />
               <em className="text-gold not-italic font-light">to Justice.</em>

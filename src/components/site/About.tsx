@@ -10,14 +10,14 @@ const credentials = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-16 lg:py-24 border-t border-border/50 overflow-hidden">
+    <section id="about" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16 lg:gap-20 items-center">
 
         {/* Text Column */}
         <div className="lg:col-span-5 space-y-10">
           <Reveal>
             <SectionLabel>The Firm</SectionLabel>
-            <h2 className="mt-8 font-serif text-5xl lg:text-6xl leading-[1] text-gradient">
+            <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1] text-gradient">
               <em className="italic font-light">Experienced</em>
               <br />
               <span className="text-gold">&amp; Trusted Legal</span>
@@ -34,11 +34,9 @@ export function About() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Established under Advocate Vishal Dabas, VD Legal is built on a single conviction:
-              that every individual and institution deserves access to clear, effective,
-              and strategic legal solutions — delivered by practitioners who understand
-              the stakes and rise to meet them. Our team serves clients across Delhi NCR,
-              Chandigarh, Haryana, Rajasthan, Himachal Pradesh, and Uttar Pradesh.
+              Established under the leadership of Advocate Vishal Dabas, VD Legal represents a dynamic blend of experienced and emerging legal professionals. We are driven by a singular conviction: that every individual and institution deserves access to clear, effective, and strategic legal expertise.
+              <br/><br/>
+              Rooted in a highly client-centric approach, we specialize in delivering tailor-made legal solutions designed to meet the unique stakes of each case. Our team maintains a strong national legal presence, proudly serving and representing clients across Delhi NCR, Chandigarh, Haryana, Rajasthan, Himachal Pradesh, and Uttar Pradesh.
             </p>
           </Reveal>
           <Reveal delay={0.3}>

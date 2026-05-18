@@ -29,7 +29,7 @@ export function Testimonials() {
   const prev = () => setI((i - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="relative py-16 lg:py-24 border-t border-border/50">
+    <section className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel>Client Testimonials</SectionLabel>
@@ -46,7 +46,7 @@ export function Testimonials() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="relative"
             >
-              <p className="font-serif text-3xl lg:text-5xl leading-[1.15] text-gradient italic font-light">
+              <p className="font-serif text-2xl md:text-3xl lg:text-5xl leading-[1.25] lg:leading-[1.15] text-gradient italic font-light">
                 "{t.q}"
               </p>
               <footer className="mt-12 flex items-end justify-between flex-wrap gap-6">

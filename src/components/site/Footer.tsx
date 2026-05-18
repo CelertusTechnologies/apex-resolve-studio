@@ -28,7 +28,7 @@ export function Footer() {
           </div>
           <FooterCol title="Practice Areas" items={["Corporate Law", "Real Estate & RERA", "Civil & Criminal Litigation", "PMLA / FEMA", "Arbitration", "Insolvency & Bankruptcy", "IPR", "Taxation"]} />
           <FooterCol title="The Firm" items={["About Us", "Our Team", "Our Commitment", "Careers", "News & Insights"]} />
-          <FooterCol title="Get In Touch" items={["Book Consultation", "vdlegaladvocate@gmail.com", "+91-9999651586", "Chamber No. 209, Delhi High Court"]} />
+          <FooterCol title="Get In Touch" items={["Book Consultation", "mail@vdlegal.in", "+91 98739 76214", "84, Hemkunt Colony, GK-I", "Chamber 508, Delhi High Court"]} />
         </div>
 
         <div className="hairline pt-8 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">

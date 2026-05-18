@@ -15,11 +15,11 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="relative py-16 lg:py-24 border-t border-border/50">
+    <section className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel>Frequently Asked</SectionLabel>
-          <h2 className="mt-8 font-serif text-5xl lg:text-6xl text-gradient leading-[1]">
+          <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient leading-[1.1] md:leading-[1]">
             Your questions,<br /><em className="text-gold not-italic font-light">answered.</em>
           </h2>
         </Reveal>

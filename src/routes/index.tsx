@@ -3,6 +3,7 @@ import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Practice } from "@/components/site/Practice";
+import { TrustedBy } from "@/components/site/TrustedBy";
 import { Attorneys } from "@/components/site/Attorneys";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Testimonials } from "@/components/site/Testimonials";
@@ -30,6 +31,7 @@ function Index() {
       <Hero />
       <About />
       <Practice />
+      <TrustedBy />
       <Attorneys />
       <WhyUs />
       <Testimonials />

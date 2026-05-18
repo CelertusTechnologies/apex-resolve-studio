@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Phone } from "lucide-react";
-import heroImg from "@/assets/vd_hero.png";
+import heroImg from "@/assets/vd_hero.jpeg";
+import heroImg1 from "@/assets/vd_hero1.jpeg";
+import heroImg2 from "@/assets/vd_hero2.jpeg";
+import heroImg3 from "@/assets/vd_hero3.jpeg";
+import heroImg4 from "@/assets/vd_hero4.jpeg";
+import heroImg5 from "@/assets/vd_hero5.jpeg";
+import heroImg6 from "@/assets/vd_hero6.jpeg";
+import heroImg7 from "@/assets/vd_hero7.jpeg";
+import heroImg8 from "@/assets/vd_hero8.jpeg";
+import heroImg9 from "@/assets/vd_hero9.jpeg";
 
 export function Hero() {
   return (
@@ -53,7 +62,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="font-serif text-[clamp(3rem,7vw,7rem)] leading-[0.95] tracking-tight max-w-5xl"
+          className="font-serif text-[clamp(2.5rem,8vw,7rem)] leading-[1.05] md:leading-[0.95] tracking-tight max-w-5xl"
         >
           <span className="text-gradient">Defending Rights.</span>
           <br />
@@ -67,7 +76,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.3 }}
           className="mt-10 max-w-xl text-base lg:text-lg text-muted-foreground leading-relaxed"
         >
-          A premier full-service law firm established under the leadership of Advocate Vishal Dabas.
+          A full-service law firm established under the leadership of Advocate Vishal Dabas.
           We deliver high-quality legal solutions across the Supreme Court of India, High Courts,
           District Courts, NCLT, NCLAT, and all judicial and quasi-judicial bodies.
         </motion.p>
@@ -88,10 +97,10 @@ export function Hero() {
             </span>
           </a>
           <a
-            href="tel:+919999651586"
+            href="tel:+919873976214"
             className="inline-flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors px-5 py-3"
           >
-            <Phone className="h-4 w-4" /> +91-9999651586
+            <Phone className="h-4 w-4" /> +91 98739 76214
           </a>
         </motion.div>
 

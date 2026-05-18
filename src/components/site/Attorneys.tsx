@@ -13,12 +13,10 @@ import aishwarya from "@/assets/aishwarya.jpeg";
 
 const team = [
   { img: vishalDabas, name: "Vishal Dabas", role: "Founder & Managing Partner", focus: "Corporate Law · Litigation · Arbitration", featured: true },
-  { img: ravi, name: "Ravi Mehrotra", role: "Senior Associate", focus: "PMLA / FEMA Specialist" },
   { img: rahul, name: "Rahul Ahlawat", role: "Senior Associate", focus: "Civil & Criminal Litigation Expert" },
-  { img: sahil, name: "Sahil Dabas", role: "Associate", focus: "Real Estate & RERA Specialist" },
-  { img: krishna, name: "Krishna Dayama", role: "Senior Counsel", focus: "Senior Counsel for Union of India" },
   { img: hemant, name: "Hemant Chauhan", role: "Associate", focus: "Corporate Law & Arbitration Specialist" },
   { img: vivek, name: "Vivek Rampal", role: "Consultant", focus: "Due Diligence & Risk Advisory Expert" },
+  { img: sahil, name: "Sahil Dabas", role: "Associate", focus: "Real Estate & RERA Specialist" },
   { img: chirasha, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
   { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert" },
 ];
@@ -28,12 +26,12 @@ export function Attorneys() {
   const rest = team.slice(1);
 
   return (
-    <section id="attorneys" className="relative py-16 lg:py-24 border-t border-border/50">
+    <section id="attorneys" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
             <SectionLabel>Our Team</SectionLabel>
-            <h2 className="mt-8 font-serif text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1]">
+            <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1.1]">
               The Counsel<br />
               <em className="text-gold not-italic font-light">Behind Your Case.</em>
             </h2>
@@ -57,13 +55,13 @@ export function Attorneys() {
                   width={900}
                   height={900}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/80" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background lg:hidden" />
               </div>
               <div className="flex flex-col justify-center p-10 lg:p-16">
                 <div className="text-[10px] uppercase tracking-[0.3em] text-gold/80 mb-3">Founder</div>
-                <h3 className="font-serif text-4xl lg:text-5xl text-gradient mb-4">
+                <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gradient mb-4">
                   {founder.name}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-sm">
@@ -90,8 +88,8 @@ export function Attorneys() {
           </div>
         </Reveal>
 
-        {/* Rest of the team — 4-column grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Rest of the team — 3-column grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {rest.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.07}>
               <div className="group relative">
@@ -102,14 +100,14 @@ export function Attorneys() {
                     width={768}
                     height={1024}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-90" />
-                  <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                  {/* Glass strip confined strictly to text area */}
+                  <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-0 lg:translate-y-2 lg:group-hover:translate-y-0 transition-transform duration-500 bg-background/85 backdrop-blur-md border-t border-white/5">
                     <div className="text-[10px] uppercase tracking-[0.25em] text-gold/80 mb-1.5">{p.role}</div>
                     <h3 className="font-serif text-xl leading-tight">{p.name}</h3>
                     <p className="text-[11px] text-muted-foreground mt-1.5 leading-snug">{p.focus}</p>
-                    <div className="flex gap-2.5 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="flex gap-2.5 mt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
                       <a href="#" className="p-1.5 glass rounded-full hover:bg-foreground hover:text-background transition-all">
                         <Linkedin className="h-3 w-3" />
                       </a>

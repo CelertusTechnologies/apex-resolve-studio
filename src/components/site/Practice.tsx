@@ -1,105 +1,105 @@
 import {
-  Building2, Shield, Scale, Home, Heart, FileSearch, ArrowUpRight,
-  Landmark, Banknote, Briefcase, BookOpen, Users, RefreshCw, Gavel,
+  Building2, Shield, Scale, Home, Heart, ArrowUpRight,
+  Landmark, Briefcase, Users, RefreshCw, Gavel, Monitor, Leaf, FileCheck, Map
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
 
 const areas = [
   {
-    icon: Building2,
-    title: "Corporate Law",
-    desc: "Business formation, compliance, contracts, internal & operational audit support, risk assessment & control reviews, manufacturing process & inventory audits.",
-    subs: ["Business Formation", "Compliance & Contracts", "Risk Assessment"],
-  },
-  {
-    icon: Home,
-    title: "Real Estate Law",
-    desc: "Property disputes, transactions, due diligence of properties, RERA matters, and banking & financial services audit documentation.",
-    subs: ["Property Disputes", "Due Diligence", "RERA Matters"],
+    icon: Gavel,
+    title: "Arbitration & ADR",
+    desc: "Expert representation in domestic and international arbitration, mediation, and conciliation proceedings before major arbitral tribunals.",
+    subs: ["Domestic Arbitration", "International ADR", "Mediation"],
   },
   {
     icon: Scale,
-    title: "Civil / Criminal Litigation",
-    desc: "Dispute resolution, claims handling, criminal law litigation, and alternate dispute resolution across Supreme Court, High Courts, District Courts & tribunals.",
-    subs: ["Dispute Resolution", "Criminal Litigation", "ADR"],
+    title: "Civil / Criminal / Commercial Litigation",
+    desc: "Robust dispute resolution across the Supreme Court, High Courts, and specialized tribunals for all civil, criminal, and commercial matters.",
+    subs: ["Dispute Resolution", "Criminal Defense", "Commercial Claims"],
   },
   {
-    icon: Heart,
-    title: "Family & Matrimonial Law",
-    desc: "Divorce, custody matters, estate planning, and comprehensive family legal services handled with utmost sensitivity and discretion.",
-    subs: ["Divorce & Custody", "Estate Planning", "Matrimonial Disputes"],
+    icon: Building2,
+    title: "Corporate & Commercial",
+    desc: "Strategic advisory on corporate governance, business formation, compliance, M&A, and comprehensive commercial contract drafting.",
+    subs: ["Corporate Governance", "M&A", "Contract Advisory"],
   },
   {
-    icon: Shield,
-    title: "Intellectual Property Rights",
-    desc: "Trademark, copyrights & patents litigation, alternate dispute resolution, and comprehensive IP strategy to protect your creative and commercial assets.",
-    subs: ["Trademarks", "Patents & Copyrights", "IP Litigation"],
+    icon: Map,
+    title: "Land Disputes",
+    desc: "Specialized representation in land acquisition, zoning laws, property boundary disputes, and complex land revenue matters.",
+    subs: ["Land Acquisition", "Zoning Laws", "Revenue Matters"],
   },
   {
-    icon: FileSearch,
-    title: "Audit & Due Diligence",
-    desc: "Banking & financial services audit support, SOP & reporting, comprehensive due diligence across all sectors, and risk control reviews.",
-    subs: ["Financial Audits", "SOP & Reporting", "Due Diligence"],
+    icon: Users,
+    title: "Employment & Labour",
+    desc: "Advisory and litigation on labor codes, workforce structuring, employee disputes, and compliance with statutory employment laws.",
+    subs: ["Labour Codes", "Workforce Structuring", "Employee Disputes"],
   },
   {
-    icon: Landmark,
-    title: "PMLA / FEMA",
-    desc: "Prevention of Money Laundering Act matters, FEMA violations, ED proceedings, enforcement actions, and financial compliance advisory.",
-    subs: ["PMLA Defense", "FEMA Compliance", "ED Proceedings"],
+    icon: Leaf,
+    title: "Environment & Climate Change",
+    desc: "Navigating complex environmental regulations, representation before the NGT, and advising on sustainable compliance and climate policies.",
+    subs: ["NGT Representation", "Environmental Compliance", "Climate Policy"],
   },
   {
-    icon: Gavel,
-    title: "Arbitration",
-    desc: "Domestic and international arbitration proceedings, arbitral award enforcement, and alternate dispute resolution before all major arbitral forums.",
-    subs: ["Domestic Arbitration", "International ADR", "Award Enforcement"],
-  },
-  {
-    icon: Banknote,
-    title: "Banking & Finance",
-    desc: "Banking litigation, loan recovery, NPA matters, banking regulatory compliance, and representation before DRTs, DRATs & RBI forums.",
-    subs: ["Loan Recovery", "NPA Matters", "DRT / DRAT"],
+    icon: Monitor,
+    title: "Cyber Laws & IT",
+    desc: "Comprehensive legal support for data privacy, cybersecurity breaches, tech contracts, and representation in cybercrime litigation.",
+    subs: ["Data Privacy", "Cybersecurity", "Tech Contracts"],
   },
   {
     icon: RefreshCw,
     title: "Insolvency & Bankruptcy",
-    desc: "Representation before NCLT and NCLAT in insolvency resolution proceedings, corporate restructuring, and IBC advisory for creditors and debtors.",
+    desc: "Strategic advisory and representation before NCLT/NCLAT for creditors, corporate debtors, and resolution professionals under the IBC.",
     subs: ["NCLT / NCLAT", "IBC Advisory", "Corporate Restructuring"],
   },
   {
-    icon: Users,
-    title: "Service Law",
-    desc: "Central and state government service matters, departmental proceedings, CAT appeals, and employment disputes for public sector employees.",
-    subs: ["CAT Matters", "Departmental Proceedings", "Employment Disputes"],
+    icon: Shield,
+    title: "Intellectual Property",
+    desc: "End-to-end IP protection strategies including trademark, copyright, and patent registration, enforcement, and infringement litigation.",
+    subs: ["Trademarks", "Patents & Copyrights", "IP Litigation"],
+  },
+  {
+    icon: Landmark,
+    title: "Real Estate & Taxation",
+    desc: "Due diligence, RERA compliance, real estate transactions, alongside robust advisory on direct and indirect tax matters.",
+    subs: ["RERA Matters", "Due Diligence", "Tax Advisory"],
+  },
+  {
+    icon: FileCheck,
+    title: "Registrations & Approvals",
+    desc: "Seamless facilitation of statutory registrations, licenses, and regulatory approvals essential for establishing and running operations.",
+    subs: ["Statutory Licensing", "Regulatory Approvals", "Compliance"],
   },
   {
     icon: Briefcase,
-    title: "Consumer Law",
-    desc: "Consumer protection disputes before District, State, and National Consumer Disputes Redressal Commissions (NCDRC) across all sectors.",
-    subs: ["Consumer Disputes", "NCDRC", "Product Liability"],
+    title: "POSH / Sexual Harassment",
+    desc: "Assisting organizations with POSH compliance, IC formations, conducting inquiries, and handling sensitive workplace harassment matters.",
+    subs: ["POSH Compliance", "IC Formations", "Workplace Inquiries"],
   },
   {
-    icon: BookOpen,
-    title: "Constitutional Law",
-    desc: "Writ petitions before Supreme Court and High Courts, fundamental rights enforcement, and public interest litigation on constitutional matters.",
-    subs: ["Writ Petitions", "Fundamental Rights", "PIL"],
+    icon: Home,
+    title: "Trusts & Charities",
+    desc: "Formation and advisory for trusts, NGOs, and charitable institutions, ensuring compliance with FCRA and specialized tax regulations.",
+    subs: ["Trust Formation", "NGO Compliance", "FCRA Regulations"],
   },
   {
-    icon: Building2,
-    title: "Taxation",
-    desc: "Direct and indirect tax advisory, income tax litigation, GST disputes, customs & excise matters, and representation before tax tribunals.",
-    subs: ["Income Tax", "GST Disputes", "Tax Tribunals"],
+    icon: Heart,
+    title: "Matrimonial Disputes",
+    desc: "Sensitive and discreet legal assistance in divorce proceedings, child custody, alimony claims, and comprehensive family law matters.",
+    subs: ["Divorce & Custody", "Alimony Claims", "Family Law"],
   },
 ];
 
 export function Practice() {
   return (
-    <section id="practice" className="relative py-16 lg:py-24 border-t border-border/50">
+    <section id="practice" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
             <SectionLabel>Practice Areas</SectionLabel>
-            <h2 className="mt-8 font-serif text-5xl lg:text-6xl leading-[1] text-gradient max-w-3xl">
+            <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1] text-gradient max-w-3xl">
               Comprehensive<br />
               <em className="text-gold not-italic font-light">Legal Support.</em>
             </h2>
@@ -131,7 +131,7 @@ export function Practice() {
                     {a.desc}
                   </p>
                   {/* Sub-pills */}
-                  <div className="flex flex-wrap gap-2 mb-10">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {a.subs.map((s) => (
                       <span
                         key={s}
@@ -141,7 +141,7 @@ export function Practice() {
                       </span>
                     ))}
                   </div>
-                  <div className="absolute bottom-0 right-0 inline-flex items-center gap-2 text-xs text-muted-foreground group-hover:text-gold transition-colors">
+                  <div className="flex justify-end items-center gap-2 text-xs text-muted-foreground group-hover:text-gold transition-colors">
                     Learn more
                     <ArrowUpRight className="h-3.5 w-3.5 group-hover:rotate-45 transition-transform duration-500" />
                   </div>

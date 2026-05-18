@@ -35,11 +35,11 @@ export function Results() {
     { v: 6, s: "", p: "", l: "Cities Pan-India" },
   ];
   return (
-    <section id="results" className="relative py-16 lg:py-24 border-t border-border/50">
+    <section id="results" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel>By the Numbers</SectionLabel>
-          <h2 className="mt-6 font-serif text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1]">
+          <h2 className="mt-6 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient max-w-3xl leading-[1.1] md:leading-[1]">
             Proven results —<br /><em className="text-gold not-italic font-light">built on trust.</em>
           </h2>
         </Reveal>
