@@ -4,8 +4,8 @@ import supremeCourtImg from "@/assets/supreme_court.png";
 
 const credentials = [
   { label: "Supreme Court", sub: "& High Courts" },
-  { label: "NCLT / NCLAT", sub: "Tribunal Matters" },
-  { label: "Pan-India", sub: "6+ City Presence" },
+  { label: "NCLT / NCLAT & PMLA", sub: "Tribunal Matters" },
+  { label: "Pan-India", sub: "15+ States" },
 ];
 
 export function About() {
@@ -29,14 +29,14 @@ export function About() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               VD Legal is a full-service law firm providing high-quality legal solutions
               in multiple domains. Our work extends from the Supreme Court and High Courts
-              to District Courts, NCLT, NCLAT, and all judicial and quasi-judicial bodies.
+              to District Courts, NCLT/NCLAT, PMLA, all judicial and quasi-judicial bodies.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-base text-muted-foreground leading-relaxed">
               Established under the leadership of Advocate Vishal Dabas, VD Legal represents a dynamic blend of experienced and emerging legal professionals. We are driven by a singular conviction: that every individual and institution deserves access to clear, effective, and strategic legal expertise.
-              <br/><br/>
-              Rooted in a highly client-centric approach, we specialize in delivering tailor-made legal solutions designed to meet the unique stakes of each case. Our team maintains a strong national legal presence, proudly serving and representing clients across Delhi NCR, Chandigarh, Haryana, Rajasthan, Himachal Pradesh, and Uttar Pradesh.
+              <br /><br />
+              Rooted in a highly client-centric approach, we specialize in delivering tailor-made legal solutions designed to meet the unique stakes of each case. Our team maintains a strong national legal presence, proudly serving and representing clients across 15+ States.
             </p>
           </Reveal>
           <Reveal delay={0.3}>

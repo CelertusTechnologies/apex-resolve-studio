@@ -8,7 +8,6 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#practice", label: "Practice Areas" },
   { href: "#attorneys", label: "Our Team" },
-  { href: "#results", label: "Results" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -50,7 +49,7 @@ export function Navbar() {
             <div className="relative flex items-center justify-center h-12 w-auto transition-transform duration-300 group-hover:scale-105">
               <img src={vdLogo} alt="VD Legal Logo" className="h-full w-auto object-contain drop-shadow-md" />
             </div>
-            <span className="font-serif text-xl tracking-wide hidden lg:block">
+            <span className="font-serif text-3xl font-semibold tracking-wide hidden lg:block">
               VD <span className="text-gold">Legal</span>
             </span>
           </a>

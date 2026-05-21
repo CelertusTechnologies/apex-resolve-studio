@@ -7,7 +7,6 @@ import { TrustedBy } from "@/components/site/TrustedBy";
 import { Attorneys } from "@/components/site/Attorneys";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Testimonials } from "@/components/site/Testimonials";
-import { Results } from "@/components/site/Results";
 import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -35,7 +34,6 @@ function Index() {
       <Attorneys />
       <WhyUs />
       <Testimonials />
-      <Results />
       <FAQ />
       <Contact />
       <Footer />

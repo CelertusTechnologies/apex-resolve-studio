@@ -25,11 +25,13 @@ const logos = [
 export function TrustedBy() {
   return (
     <section className="relative py-12 md:py-16 lg:py-24 border-t border-border/50 overflow-hidden bg-background">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 mb-12 flex flex-col items-center text-center">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 mb-12 flex flex-col justify-start">
         <Reveal>
           <SectionLabel>Trusted By</SectionLabel>
-          <h2 className="mt-6 font-serif text-3xl lg:text-4xl text-gradient">
-            Our Esteemed <em className="text-gold not-italic font-light">Clientele.</em>
+          <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient leading-[1.1] md:leading-[1]">
+            Our Esteemed
+            <br />
+            <em className="text-gold not-italic font-light">Clientele.</em>
           </h2>
         </Reveal>
       </div>

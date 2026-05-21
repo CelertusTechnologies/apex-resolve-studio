@@ -114,22 +114,24 @@ export function Practice() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border/40 rounded-2xl overflow-hidden">
-          {areas.map((a, i) => (
-            <Reveal key={a.title} delay={i * 0.05}>
-              <a
-                href="#contact"
-                className="group relative block bg-background/60 p-10 h-full transition-all duration-500 hover:bg-card overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/0 via-gold/0 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <div className="relative">
-                  <a.icon className="h-7 w-7 text-gold mb-8" strokeWidth={1.25} />
-                  <div className="text-xs text-muted-foreground tracking-widest mb-2">
-                    0{i + 1}
-                  </div>
-                  <h3 className="font-serif text-2xl mb-4">{a.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                    {a.desc}
-                  </p>
+          {areas.map((a, i) => {
+            const IconComponent = a.icon;
+            return (
+              <Reveal key={a.title} delay={i * 0.05}>
+                <a
+                  href="#contact"
+                  className="group relative block bg-background/60 p-10 h-full transition-all duration-500 hover:bg-card overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-gold/0 via-gold/0 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="relative">
+                    <IconComponent className="h-7 w-7 text-[var(--gold)] mb-8" strokeWidth={1.25} />
+                    <div className="text-xs text-muted-foreground tracking-widest mb-2">
+                      0{i + 1}
+                    </div>
+                    <h3 className="font-serif text-2xl mb-4">{a.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                      {a.desc}
+                    </p>
                   {/* Sub-pills */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {a.subs.map((s) => (
@@ -147,8 +149,9 @@ export function Practice() {
                   </div>
                 </div>
               </a>
-            </Reveal>
-          ))}
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

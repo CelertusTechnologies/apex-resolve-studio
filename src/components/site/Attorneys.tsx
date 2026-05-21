@@ -7,7 +7,6 @@ import rahul from "@/assets/rahul.jpeg";
 import sahil from "@/assets/sahil.jpeg";
 import krishna from "@/assets/krishna.jpeg";
 import hemant from "@/assets/hemant.jpeg";
-import vivek from "@/assets/vivek.jpeg";
 import chirasha from "@/assets/chirasha.jpeg";
 import aishwarya from "@/assets/aishwarya.jpeg";
 
@@ -15,7 +14,6 @@ const team = [
   { img: vishalDabas, name: "Vishal Dabas", role: "Founder & Managing Partner", focus: "Corporate Law · Litigation · Arbitration", featured: true },
   { img: rahul, name: "Rahul Ahlawat", role: "Senior Associate", focus: "Civil & Criminal Litigation Expert" },
   { img: hemant, name: "Hemant Chauhan", role: "Associate", focus: "Corporate Law & Arbitration Specialist" },
-  { img: vivek, name: "Vivek Rampal", role: "Consultant", focus: "Due Diligence & Risk Advisory Expert" },
   { img: sahil, name: "Sahil Dabas", role: "Associate", focus: "Real Estate & RERA Specialist" },
   { img: chirasha, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
   { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert" },
@@ -65,9 +63,8 @@ export function Attorneys() {
                   {founder.name}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-sm">
-                  Founder & Managing Partner of VD Legal, Advocate Vishal Dabas is an alumnus
-                  of Campus Law Centre, University of Delhi. He specialises in Corporate Law,
-                  Civil & Criminal Litigation, Arbitration, and NCLT / NCLAT matters. He has
+                  Founder & Managing Partner of VD Legal, Advocate Vishal Dabas specialises in Corporate Law,
+                  Civil & Criminal Litigation, Arbitration, NCLT / NCLAT & PMLA matters. He has
                   appeared before the Supreme Court of India, Delhi High Court, and numerous
                   District Courts and Tribunals, delivering precision advocacy and strategic
                   legal solutions tailored to every client's needs.
@@ -81,7 +78,7 @@ export function Attorneys() {
                       <Mail className="h-3.5 w-3.5" />
                     </a>
                   </div>
-                  <span className="text-xs text-muted-foreground tracking-widest ml-2">Advocate, Bar Council of Delhi · Campus Law Centre, DU</span>
+                  <span className="text-xs text-muted-foreground tracking-widest ml-2">Advocate, Bar Council of Delhi </span>
                 </div>
               </div>
             </div>

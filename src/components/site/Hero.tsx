@@ -10,6 +10,7 @@ import heroImg6 from "@/assets/vd_hero6.jpeg";
 import heroImg7 from "@/assets/vd_hero7.jpeg";
 import heroImg8 from "@/assets/vd_hero8.jpeg";
 import heroImg9 from "@/assets/vd_hero9.jpeg";
+import vdLogo from "@/assets/vd_logo.png";
 
 export function Hero() {
   return (
@@ -49,12 +50,12 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.05 }}
           className="mb-8 inline-flex items-center gap-3"
         >
-          <div className="flex items-center justify-center h-14 w-14 rounded-full border border-gold/50 shadow-glow">
-            <span className="font-serif text-xl font-semibold text-gold">VD</span>
+          <div className="flex items-center justify-center h-14 w-14 rounded-full border border-gold/50 shadow-glow p-2 bg-background/30 backdrop-blur-sm">
+            <img src={vdLogo} alt="VD Legal Logo" className="h-full w-full object-contain" />
           </div>
           <div>
-            <div className="font-serif text-lg text-gold">VD Legal</div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Established — 2009</div>
+            <div className="font-serif text-2xl font-semibold tracking-wide">VD <span className="text-gold">Legal</span></div>
+            <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mt-0.5">Established — 2009</div>
           </div>
         </motion.div>
 
@@ -78,7 +79,7 @@ export function Hero() {
         >
           A full-service law firm established under the leadership of Advocate Vishal Dabas.
           We deliver high-quality legal solutions across the Supreme Court of India, High Courts,
-          District Courts, NCLT, NCLAT, and all judicial and quasi-judicial bodies.
+          District Courts, NCLT, NCLAT, all judicial and quasi-judicial bodies.
         </motion.p>
 
         <motion.div
@@ -113,9 +114,9 @@ export function Hero() {
         >
           {[
             ["15+", "Years of Experience"],
-            ["6", "Cities Pan-India"],
+            ["15+", "States"],
             ["14+", "Practice Areas"],
-            ["9", "Legal Specialists"],
+            ["25+", "Legal Specialists"],
           ].map(([n, l]) => (
             <div key={l} className="bg-background/40 px-6 py-7">
               <div className="font-serif text-3xl lg:text-4xl text-gradient">{n}</div>

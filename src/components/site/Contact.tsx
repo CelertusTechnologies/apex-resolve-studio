@@ -18,21 +18,21 @@ export function Contact() {
           <Reveal delay={0.1}>
             <div className="space-y-6 text-sm">
               <div className="flex gap-4 items-start">
-                <Phone className="h-4 w-4 text-gold mt-0.5" />
+                <Phone className="h-4 w-4 text-[var(--gold)] mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Direct Line</div>
                   <a href="tel:+919873976214" className="hover:text-gold transition-colors">+91 98739 76214</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <Mail className="h-4 w-4 text-gold mt-0.5" />
+                <Mail className="h-4 w-4 text-[var(--gold)] mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Email</div>
                   <a href="mailto:mail@vdlegal.in" className="hover:text-gold transition-colors">mail@vdlegal.in</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <MapPin className="h-4 w-4 text-gold mt-0.5" />
+                <MapPin className="h-4 w-4 text-[var(--gold)] mt-0.5" />
                 <div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Office</div>
                   <div>84, Basement, Hemkunt Colony,<br />Greater Kailash Part - I,<br />New Delhi - 110048</div>
