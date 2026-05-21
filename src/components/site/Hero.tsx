@@ -31,7 +31,7 @@ export function Hero() {
         <div className="absolute inset-0 grid-bg opacity-20" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-44 pb-16 lg:pt-52 lg:pb-20">
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-44 pb-20 lg:pt-52 lg:pb-32">
         {/* Top label */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -39,25 +39,10 @@ export function Hero() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground mb-10"
         >
-          <span className="h-px w-10 bg-gold/60" />
-          Advocates &amp; Solicitors — New Delhi, India · Where Expertise Meets Excellence
+
         </motion.div>
 
-        {/* Badge / VD mark */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.05 }}
-          className="mb-8 inline-flex items-center gap-3"
-        >
-          <div className="flex items-center justify-center h-14 w-14 rounded-full border border-gold/50 shadow-glow p-2 bg-background/30 backdrop-blur-sm">
-            <img src={vdLogo} alt="VD Legal Logo" className="h-full w-full object-contain" />
-          </div>
-          <div>
-            <div className="font-serif text-2xl font-semibold tracking-wide">VD <span className="text-gold">Legal</span></div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mt-0.5">Established — 2009</div>
-          </div>
-        </motion.div>
+
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -79,7 +64,7 @@ export function Hero() {
         >
           A full-service law firm established under the leadership of Advocate Vishal Dabas.
           We deliver high-quality legal solutions across the Supreme Court of India, High Courts,
-          District Courts, NCLT, NCLAT, all judicial and quasi-judicial bodies.
+          District Courts, NCLT, NCLAT, PMLA, all judicial and quasi-judicial bodies.
         </motion.p>
 
         <motion.div

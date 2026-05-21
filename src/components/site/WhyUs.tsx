@@ -14,7 +14,7 @@ const commitment = [
 
 export function WhyUs() {
   return (
-    <section id="whyus" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50 overflow-hidden">
+    <section id="whyus" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20 -z-10" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10">

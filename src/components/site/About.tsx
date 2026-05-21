@@ -10,7 +10,7 @@ const credentials = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50 overflow-hidden">
+    <section id="about" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16 lg:gap-20 items-center">
 
         {/* Text Column */}
@@ -26,29 +26,30 @@ export function About() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed tracking-tight">
               VD Legal is a full-service law firm providing high-quality legal solutions
               in multiple domains. Our work extends from the Supreme Court and High Courts
               to District Courts, NCLT/NCLAT, PMLA, all judicial and quasi-judicial bodies.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-base text-muted-foreground leading-relaxed">
+            <p className="text-lg text-foreground/90 font-medium leading-relaxed mt-8">
               Established under the leadership of Advocate Vishal Dabas, VD Legal represents a dynamic blend of experienced and emerging legal professionals. We are driven by a singular conviction: that every individual and institution deserves access to clear, effective, and strategic legal expertise.
-              <br /><br />
-              Rooted in a highly client-centric approach, we specialize in delivering tailor-made legal solutions designed to meet the unique stakes of each case. Our team maintains a strong national legal presence, proudly serving and representing clients across 15+ States.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed mt-6">
+              Rooted in a highly <span className="text-foreground font-medium">client-centric approach</span>, we specialize in delivering <span className="text-foreground font-medium">tailor-made legal solutions</span> designed to meet the unique stakes of each case. Our team maintains a <span className="text-foreground font-medium">strong national legal presence</span>, proudly serving and representing clients across <span className="text-foreground font-medium">15+ States</span>.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <div className="grid sm:grid-cols-3 gap-px hairline pt-10">
+            <div className="grid sm:grid-cols-3 gap-8 hairline pt-10">
               {[
                 ["Mission", "To provide clear, effective, and strategic legal solutions across every legal domain."],
                 ["Vision", "Justice that is accessible, transparent, and fair for all — in every court, for every client."],
                 ["Method", "Expert advocacy. Rigorous research. Precision-driven representation in all courts & tribunals."],
               ].map(([t, d]) => (
-                <div key={t} className="pt-6">
+                <div key={t} className="pt-6 h-full flex flex-col">
                   <div className="text-xs uppercase tracking-widest text-gold/80 mb-3">{t}</div>
-                  <div className="text-sm text-muted-foreground leading-relaxed">{d}</div>
+                  <div className="text-sm text-muted-foreground leading-relaxed flex-grow">{d}</div>
                 </div>
               ))}
             </div>

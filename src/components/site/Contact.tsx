@@ -6,7 +6,7 @@ import { SectionLabel } from "./SectionLabel";
 export function Contact() {
   const [sent, setSent] = useState(false);
   return (
-    <section id="contact" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
+    <section id="contact" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5 space-y-12">
           <Reveal>
@@ -43,11 +43,11 @@ export function Contact() {
             </div>
           </Reveal>
           <Reveal delay={0.2}>
-            <div className="aspect-[4/3] rounded-xl overflow-hidden border border-border/60 grid-bg relative">
+            <div className="aspect-video lg:aspect-[4/3] rounded-xl overflow-hidden border border-border/60 grid-bg relative">
               <iframe
                 title="VD Legal Office — New Delhi"
                 className="absolute inset-0 h-full w-full grayscale contrast-125 opacity-80"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=77.19%2C28.62%2C77.22%2C28.64&layer=mapnik&marker=28.630%2C77.2090"
+                src="https://maps.google.com/maps?q=84,+Hemkunt+Colony,+Greater+Kailash+Part+-+I,+New+Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 loading="lazy"
               />
             </div>

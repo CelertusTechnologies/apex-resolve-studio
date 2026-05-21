@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Reveal } from "./Reveal";
@@ -24,18 +24,30 @@ const testimonials = [
 
 export function Testimonials() {
   const [i, setI] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
   const t = testimonials[i];
-  const next = () => setI((i + 1) % testimonials.length);
-  const prev = () => setI((i - 1 + testimonials.length) % testimonials.length);
+  
+  const next = () => setI((prev) => (prev + 1) % testimonials.length);
+  const prev = () => setI((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+
+  useEffect(() => {
+    if (isHovered) return;
+    const interval = setInterval(next, 5000);
+    return () => clearInterval(interval);
+  }, [isHovered]);
 
   return (
-    <section className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
+    <section className="relative py-16 md:py-24 lg:py-32 border-t border-border/50">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel>Client Testimonials</SectionLabel>
         </Reveal>
 
-        <div className="mt-10 relative glass-strong rounded-3xl p-10 lg:p-16 shadow-luxe overflow-hidden">
+        <div 
+          className="mt-10 relative glass-strong rounded-3xl p-10 lg:p-16 shadow-luxe overflow-hidden"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <Quote className="absolute top-10 right-10 h-32 w-32 text-foreground/[0.03]" strokeWidth={0.5} />
           <AnimatePresence mode="wait">
             <motion.blockquote

@@ -24,7 +24,7 @@ export function Attorneys() {
   const rest = team.slice(1);
 
   return (
-    <section id="attorneys" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
+    <section id="attorneys" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>

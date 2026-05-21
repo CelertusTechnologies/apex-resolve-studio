@@ -1,6 +1,7 @@
 import {
   Building2, Shield, Scale, Home, Heart, ArrowUpRight,
-  Landmark, Briefcase, Users, RefreshCw, Gavel, Monitor, Leaf, FileCheck, Map
+  Landmark, Briefcase, Users, RefreshCw, Gavel, Monitor, Leaf, FileCheck, Map,
+  Stethoscope, ShieldAlert, Banknote
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
@@ -90,11 +91,29 @@ const areas = [
     desc: "Sensitive and discreet legal assistance in divorce proceedings, child custody, alimony claims, and comprehensive family law matters.",
     subs: ["Divorce & Custody", "Alimony Claims", "Family Law"],
   },
+  {
+    icon: Banknote,
+    title: "Banking & Insurance Laws",
+    desc: "Expert advisory and litigation services for banking operations, debt recovery, and comprehensive insurance claims representation.",
+    subs: ["Debt Recovery", "Insurance Claims", "Banking Advisory"],
+  },
+  {
+    icon: Stethoscope,
+    title: "Medico-Legal",
+    desc: "Specialized representation for healthcare professionals and institutions in medical negligence, licensing, and compliance matters.",
+    subs: ["Medical Negligence", "Healthcare Compliance", "Licensing"],
+  },
+  {
+    icon: ShieldAlert,
+    title: "Cyber Crime",
+    desc: "Robust defense and advisory in cyber crime investigations, digital fraud, and prosecuting cyber offenses under the IT Act.",
+    subs: ["Cyber Investigations", "Digital Fraud", "IT Act Offenses"],
+  },
 ];
 
 export function Practice() {
   return (
-    <section id="practice" className="relative py-12 md:py-16 lg:py-24 border-t border-border/50">
+    <section id="practice" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
@@ -144,7 +163,7 @@ export function Practice() {
                     ))}
                   </div>
                   <div className="flex justify-end items-center gap-2 text-xs text-muted-foreground group-hover:text-gold transition-colors">
-                    Learn more
+                    Contact Us
                     <ArrowUpRight className="h-3.5 w-3.5 group-hover:rotate-45 transition-transform duration-500" />
                   </div>
                 </div>

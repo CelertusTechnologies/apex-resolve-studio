@@ -28,8 +28,8 @@ export function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-500",
-        scrolled ? "py-3" : "py-6"
+        "fixed top-0 inset-x-0 z-50 transition-all duration-500 border-b",
+        scrolled ? "py-3 border-transparent" : "py-6 border-border/50 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.15)]"
       )}
     >
       <div
@@ -46,12 +46,17 @@ export function Navbar() {
         >
           <a href="#top" className="flex items-center gap-2.5 group">
             {/* VD Legal Logo Image */}
-            <div className="relative flex items-center justify-center h-12 w-auto transition-transform duration-300 group-hover:scale-105">
+            <div className="relative flex items-center justify-center h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105">
               <img src={vdLogo} alt="VD Legal Logo" className="h-full w-auto object-contain drop-shadow-md" />
             </div>
-            <span className="font-serif text-3xl font-semibold tracking-wide hidden lg:block">
-              VD <span className="text-gold">Legal</span>
-            </span>
+            <div className="flex flex-col justify-center">
+              <span className="font-serif text-2xl md:text-3xl font-semibold tracking-wide leading-none">
+                VD <span className="text-gold">Legal</span>
+              </span>
+              <span className="hidden sm:block text-[8px] md:text-[9px] tracking-[0.2em] md:tracking-[0.25em] uppercase text-muted-foreground mt-1 font-medium">
+                Advocates & Solicitors
+              </span>
+            </div>
           </a>
           <nav className="hidden md:flex items-center gap-9">
             {links.map((l) => (

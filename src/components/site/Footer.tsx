@@ -77,16 +77,39 @@ export function Footer() {
               { label: "News & Insights", href: "#contact" }
             ]} 
           />
-          <FooterCol 
-            title="Get In Touch" 
-            items={[
-              { label: "Book Consultation", href: "#contact" },
-              { label: "mail@vdlegal.in", href: "mailto:mail@vdlegal.in" },
-              { label: "+91 98739 76214", href: "tel:+919873976214" },
-              { label: "84, Hemkunt Colony, GK-I", href: "https://maps.google.com/?q=84,+Hemkunt+Colony,+Greater+Kailash+I,+New+Delhi" },
-              { label: "Chamber 508, Delhi High Court", href: "https://maps.google.com/?q=Lawyers'+Chambers+Block+III,+Delhi+High+Court,+New+Delhi" }
-            ]} 
-          />
+          <div className="lg:col-span-3">
+            <div className="text-xs uppercase tracking-widest text-gold/80 mb-5">Get In Touch</div>
+            <ul className="space-y-4">
+              <li>
+                <div className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Office Address</div>
+                <a href="https://maps.google.com/?q=84,+Basement,+Hemkunt+Colony,+Greater+Kailash+Part+-+I,+New+Delhi+-+110048" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-gold transition-colors duration-300">
+                  84, Basement, Hemkunt Colony,<br />
+                  Greater Kailash Part - I,<br />
+                  New Delhi - 110048
+                </a>
+              </li>
+              <li>
+                <div className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Chamber Address</div>
+                <a href="https://maps.google.com/?q=508,+Lawyers'+Chambers+Block-+III,+High+Court+Delhi,+New+Delhi-+110003" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-gold transition-colors duration-300">
+                  508, Lawyers' Chambers Block- III,<br />
+                  High Court Delhi,<br />
+                  New Delhi- 110003
+                </a>
+              </li>
+              <li className="pt-2">
+                <a href="tel:+919873976214" className="text-sm text-foreground hover:text-gold transition-colors duration-300 flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-gold/70" />
+                  +91 98739 76214
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mail@vdlegal.in" className="text-sm text-foreground hover:text-gold transition-colors duration-300 flex items-center gap-2">
+                  <Mail className="h-4 w-4 text-gold/70" />
+                  mail@vdlegal.in
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="hairline pt-8 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">
