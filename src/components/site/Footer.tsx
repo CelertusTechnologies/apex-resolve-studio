@@ -3,16 +3,18 @@ import vdLogo from "@/assets/vd_logo.png";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/50 pt-12 pb-8">
+    <footer className="border-t border-gold/20 pt-12 pb-8 bg-white/60 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 pb-12">
           <div className="lg:col-span-5 space-y-6">
-            {/* VD Legal brand mark */}
+            {/* VD Legal brand mark — matches Navbar circle style */}
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center h-9 w-9 rounded-full border border-gold/50 p-1.5 bg-background/50">
-                <img src={vdLogo} alt="VD Legal Logo" className="h-full w-full object-contain" />
+              <div className="relative flex items-center justify-center h-9 w-9 rounded-full border-2 border-gold/70 bg-white/80 shadow-md overflow-hidden flex-shrink-0">
+                <img src={vdLogo} alt="VD Legal Logo" className="h-[85%] w-[85%] object-contain" />
               </div>
-              <span className="font-serif text-2xl font-semibold tracking-wide">VD <span className="text-gold">Legal</span></span>
+              <span className="font-serif text-2xl font-semibold tracking-wide leading-none">
+                <span className="font-bold">VD</span> <span className="text-gold">Legal</span>
+              </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               Advocates &amp; Solicitors — providing top-tier legal services with
@@ -112,7 +114,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="hairline pt-8 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">
+        <div className="border-t border-gold/20 pt-8 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} VD Legal — Advocates &amp; Solicitors. All rights reserved. Registered with Bar Council of Delhi.</div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground">Privacy Policy</a>

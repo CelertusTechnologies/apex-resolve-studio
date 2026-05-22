@@ -44,14 +44,14 @@ export function Navbar() {
             scrolled ? "glass-strong shadow-luxe" : ""
           )}
         >
-          <a href="#top" className="flex items-center gap-2.5 group">
-            {/* VD Legal Logo Image */}
-            <div className="relative flex items-center justify-center h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105">
-              <img src={vdLogo} alt="VD Legal Logo" className="h-full w-auto object-contain drop-shadow-md" />
+          <a href="#top" className="flex items-center gap-3 group">
+            {/* VD Legal Logo — Circle Badge */}
+            <div className="relative flex items-center justify-center h-12 w-12 md:h-14 md:w-14 rounded-full border-2 border-gold/70 bg-white/80 shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105 group-hover:border-gold flex-shrink-0">
+              <img src={vdLogo} alt="VD Legal Logo" className="h-[85%] w-[85%] object-contain" />
             </div>
             <div className="flex flex-col justify-center">
               <span className="font-serif text-2xl md:text-3xl font-semibold tracking-wide leading-none">
-                VD <span className="text-gold">Legal</span>
+                <span className="font-bold">VD</span> <span className="text-gold">Legal</span>
               </span>
               <span className="hidden sm:block text-[8px] md:text-[9px] tracking-[0.2em] md:tracking-[0.25em] uppercase text-muted-foreground mt-1 font-medium">
                 Advocates & Solicitors
