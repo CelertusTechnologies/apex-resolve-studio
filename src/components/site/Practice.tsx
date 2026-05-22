@@ -8,12 +8,6 @@ import { SectionLabel } from "./SectionLabel";
 
 const areas = [
   {
-    icon: Gavel,
-    title: "Arbitration & ADR",
-    desc: "Expert representation in domestic and international arbitration, mediation, and conciliation proceedings before major arbitral tribunals.",
-    subs: ["Domestic Arbitration", "International ADR", "Mediation"],
-  },
-  {
     icon: Scale,
     title: "Civil / Criminal / Commercial Litigation",
     desc: "Robust dispute resolution across the Supreme Court, High Courts, and specialized tribunals for all civil, criminal, and commercial matters.",
@@ -24,6 +18,12 @@ const areas = [
     title: "Corporate & Commercial",
     desc: "Strategic advisory on corporate governance, business formation, compliance, M&A, and comprehensive commercial contract drafting.",
     subs: ["Corporate Governance", "M&A", "Contract Advisory"],
+  },
+  {
+    icon: Gavel,
+    title: "Arbitration & ADR",
+    desc: "Expert representation in domestic and international arbitration, mediation, and conciliation proceedings before major arbitral tribunals.",
+    subs: ["Domestic Arbitration", "International ADR", "Mediation"],
   },
   {
     icon: Map,
