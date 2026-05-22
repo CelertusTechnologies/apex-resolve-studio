@@ -136,25 +136,21 @@ export function DisclaimerModal() {
                 hyphens: "auto",
               }}
             >
-              <p style={{ margin: "0 0 1rem" }}>
-                As per the rules of the Bar Council of India, Apex Resolve Studio is prohibited from
-                soliciting work or advertising. By visiting, navigating through, and using this website
-                you hereby acknowledge that there has been no advertisement, personal communication,
-                solicitation, invitation or inducement of any sort from Apex Resolve Studio or any of
-                its advocates regarding any work or case or matter through this website.
-              </p>
-              <p style={{ margin: "0 0 1rem" }}>
-                This website is solely intended to provide you with information about Apex Resolve
-                Studio, its practice areas, sectors and verticals, people, and other related aspects
-                of the firm. You have visited this website on your own and you wish to gain more
-                information about Apex Resolve Studio for your own information and use.
-              </p>
               <p style={{ margin: 0 }}>
-                You acknowledge that the website is not intended to be a source of solicitation or
-                advertising. The contents on this website are not to be considered as legal opinion or
-                advice in any manner whatsoever. Apex Resolve Studio or any of its advocates shall not
-                be liable for any consequences of any action taken by you relying on any information
-                provided on this website.
+                As per the rules of the Bar Council of India, VD Legal is prohibited from soliciting
+                work or advertising "VD Legal — Advocates &amp; Solicitors". By visiting, navigating
+                through, and using this website you hereby acknowledge that there has been no
+                advertisement, personal communication, solicitation, invitation or inducement of any
+                sort from VD Legal or any of its advocates regarding any work or case or matter through
+                this website. This website is solely intended to provide you with information about
+                VD Legal, its practice areas, sectors and verticals, people, besides other related
+                aspects of the firm. You have visited this website on your own and you wish to gain
+                more information about VD Legal for your own information and use. You acknowledge that
+                the website is not intended to be a source of solicitation or advertising. You are also
+                informed that the contents on this website are not to be considered as legal opinion or
+                advice in any manner whatsoever. VD Legal or any of its advocates shall not be liable
+                for any consequences of any action taken by you relying on any information provided on
+                this website.
               </p>
             </div>
 
