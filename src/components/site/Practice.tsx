@@ -113,7 +113,7 @@ const areas = [
 
 export function Practice() {
   return (
-    <section id="practice" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50">
+    <section id="practice" className="relative py-12 md:py-16 lg:py-20 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
@@ -124,7 +124,7 @@ export function Practice() {
             </h2>
           </Reveal>
           <Reveal delay={0.15}>
-            <p className="text-muted-foreground max-w-md">
+            <p className="text-muted-foreground max-w-md text-justify">
               From corporate formation to courtroom advocacy — our specialists
               cover every dimension of law with recognised expertise and
               unwavering commitment.
@@ -139,30 +139,30 @@ export function Practice() {
               <Reveal key={a.title} delay={i * 0.05}>
                 <a
                   href="#contact"
-                  className="group relative block bg-background/60 p-10 h-full transition-all duration-500 hover:bg-card overflow-hidden"
+                  className="group relative flex flex-col bg-background/60 p-10 h-full transition-all duration-500 hover:bg-card overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-gold/0 via-gold/0 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                  <div className="relative">
+                  <div className="relative flex flex-col flex-1">
                     <IconComponent className="h-7 w-7 text-[var(--gold)] mb-8" strokeWidth={1.25} />
                     <div className="text-xs text-muted-foreground tracking-widest mb-2">
                       0{i + 1}
                     </div>
                     <h3 className="font-serif text-2xl mb-4">{a.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-6 text-justify">
                       {a.desc}
                     </p>
                   {/* Sub-pills */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-6 flex-1 content-start">
                     {a.subs.map((s) => (
                       <span
                         key={s}
-                        className="text-[10px] uppercase tracking-wider border border-gold/30 text-gold/70 rounded-full px-2.5 py-0.5 group-hover:border-gold/60 transition-colors duration-300"
+                        className="text-[10px] uppercase tracking-wider border border-gold/30 text-gold/70 rounded-full px-2.5 py-0.5 group-hover:border-gold/60 transition-colors duration-300 h-fit"
                       >
                         {s}
                       </span>
                     ))}
                   </div>
-                  <div className="flex justify-end items-center gap-2 text-xs text-muted-foreground group-hover:text-gold transition-colors">
+                  <div className="flex justify-end items-center gap-2 text-xs text-muted-foreground group-hover:text-gold transition-colors mt-auto">
                     Contact Us
                     <ArrowUpRight className="h-3.5 w-3.5 group-hover:rotate-45 transition-transform duration-500" />
                   </div>

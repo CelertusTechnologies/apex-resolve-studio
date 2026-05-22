@@ -31,16 +31,7 @@ export function Hero() {
         <div className="absolute inset-0 grid-bg opacity-20" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-44 pb-20 lg:pt-52 lg:pb-32">
-        {/* Top label */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground mb-10"
-        >
-
-        </motion.div>
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-42 pb-12 lg:pt-52 lg:pb-16">
 
 
 
@@ -60,7 +51,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="mt-10 max-w-xl text-base lg:text-lg text-muted-foreground leading-relaxed"
+          className="mt-10 max-w-xl text-base lg:text-lg text-muted-foreground leading-relaxed text-justify"
         >
           A full-service law firm established under the leadership of Advocate Vishal Dabas.
           We deliver high-quality legal solutions across the Supreme Court of India, High Courts,
@@ -95,7 +86,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="mt-24 lg:mt-32 grid grid-cols-2 md:grid-cols-4 gap-px glass rounded-2xl overflow-hidden"
+          className="mt-8 lg:mt-10 grid grid-cols-2 md:grid-cols-4 gap-px glass rounded-2xl overflow-hidden"
         >
           {[
             ["15+", "Years of Experience"],

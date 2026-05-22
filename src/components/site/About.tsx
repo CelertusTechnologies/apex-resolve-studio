@@ -10,7 +10,7 @@ const credentials = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50 overflow-hidden">
+    <section id="about" className="relative pt-10 pb-12 md:pt-12 md:pb-16 lg:pt-14 lg:pb-20 border-t border-border/50 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16 lg:gap-20 items-center">
 
         {/* Text Column */}
@@ -26,17 +26,17 @@ export function About() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed tracking-tight">
+            <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed tracking-tight text-justify">
               VD Legal is a full-service law firm providing high-quality legal solutions
               in multiple domains. Our work extends from the Supreme Court and High Courts
               to District Courts, NCLT/NCLAT, PMLA, all judicial and quasi-judicial bodies.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-lg text-foreground/90 font-medium leading-relaxed mt-8">
+            <p className="text-lg text-foreground/90 font-medium leading-relaxed mt-8 text-justify">
               Established under the leadership of Advocate Vishal Dabas, VD Legal represents a dynamic blend of experienced and emerging legal professionals. We are driven by a singular conviction: that every individual and institution deserves access to clear, effective, and strategic legal expertise.
             </p>
-            <p className="text-base text-muted-foreground leading-relaxed mt-6">
+            <p className="text-base text-muted-foreground leading-relaxed mt-6 text-justify">
               Rooted in a highly <span className="text-foreground font-medium">client-centric approach</span>, we specialize in delivering <span className="text-foreground font-medium">tailor-made legal solutions</span> designed to meet the unique stakes of each case. Our team maintains a <span className="text-foreground font-medium">strong national legal presence</span>, proudly serving and representing clients across <span className="text-foreground font-medium">15+ States</span>.
             </p>
           </Reveal>

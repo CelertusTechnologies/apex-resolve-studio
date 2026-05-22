@@ -24,7 +24,7 @@ export function Attorneys() {
   const rest = team.slice(1);
 
   return (
-    <section id="attorneys" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50">
+    <section id="attorneys" className="relative py-12 md:py-16 lg:py-20 border-t border-border/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <Reveal>
@@ -35,7 +35,7 @@ export function Attorneys() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-muted-foreground max-w-sm">
+            <p className="text-muted-foreground max-w-sm text-justify">
               Our team of certified legal practitioners brings decades of combined
               experience across India's most demanding legal domains.
             </p>
@@ -62,7 +62,7 @@ export function Attorneys() {
                 <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gradient mb-4">
                   {founder.name}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-sm">
+                <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-sm text-justify">
                   Founder & Managing Partner of VD Legal, Advocate Vishal Dabas specialises in Corporate Law,
                   Civil & Criminal Litigation, Arbitration, NCLT / NCLAT & PMLA matters. He has
                   appeared before the Supreme Court of India, Delhi High Court, and numerous

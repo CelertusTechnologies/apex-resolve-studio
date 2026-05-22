@@ -14,7 +14,7 @@ const commitment = [
 
 export function WhyUs() {
   return (
-    <section id="whyus" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50 overflow-hidden">
+    <section id="whyus" className="relative py-12 md:py-16 lg:py-20 border-t border-border/50 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20 -z-10" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -30,7 +30,7 @@ export function WhyUs() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="max-w-md space-y-4">
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-justify">
                 Our mission is to provide our clients with clear, effective, and strategic
                 legal solutions. We envision a world where justice is accessible,
                 transparent, and fair for all.
@@ -71,7 +71,7 @@ export function WhyUs() {
                     {/* Decorative expanding gold line */}
                     <div className="h-[1px] w-12 bg-gold/20 mb-4 group-hover:w-20 transition-all duration-500 ease-out" />
                     
-                    <p className="text-sm text-muted-foreground/80 leading-relaxed font-light group-hover:text-foreground/90 transition-colors duration-300">
+                    <p className="text-sm text-muted-foreground/80 leading-relaxed font-light group-hover:text-foreground/90 transition-colors duration-300 text-justify">
                       {it.d}
                     </p>
                   </div>

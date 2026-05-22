@@ -14,7 +14,7 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50">
+    <section id="faq" className="relative py-12 md:py-16 lg:py-20 border-t border-border/50">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <Reveal>
           <SectionLabel>Frequently Asked</SectionLabel>
@@ -29,7 +29,7 @@ export function FAQ() {
                 <AccordionTrigger className="font-serif text-xl py-7 hover:text-gold hover:no-underline text-left">
                   {f.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground leading-relaxed pb-8 max-w-3xl">
+                <AccordionContent className="text-base text-muted-foreground leading-relaxed pb-8 max-w-3xl text-justify">
                   {f.a}
                 </AccordionContent>
               </AccordionItem>

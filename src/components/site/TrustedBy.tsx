@@ -24,7 +24,7 @@ const logos = [
 
 export function TrustedBy() {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 border-t border-border/50 overflow-hidden bg-background/50">
+    <section className="relative py-12 md:py-16 lg:py-20 border-t border-border/50 overflow-hidden bg-background/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 mb-12 flex flex-col justify-start">
         <Reveal>
           <SectionLabel>Trusted By</SectionLabel>

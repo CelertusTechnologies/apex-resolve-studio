@@ -6,7 +6,7 @@ import { SectionLabel } from "./SectionLabel";
 export function Contact() {
   const [sent, setSent] = useState(false);
   return (
-    <section id="contact" className="relative py-16 md:py-24 lg:py-32 border-t border-border/50 overflow-hidden">
+    <section id="contact" className="relative py-12 md:py-16 lg:py-20 border-t border-border/50 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5 space-y-12">
           <Reveal>
