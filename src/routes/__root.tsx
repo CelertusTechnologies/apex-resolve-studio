@@ -5,6 +5,7 @@ import {
   createRootRouteWithContext,
   useRouter,
 } from "@tanstack/react-router";
+import { DisclaimerModal } from "@/components/site/DisclaimerModal";
 
 function NotFoundComponent() {
   return (
@@ -74,6 +75,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <DisclaimerModal />
       <Outlet />
     </QueryClientProvider>
   );
