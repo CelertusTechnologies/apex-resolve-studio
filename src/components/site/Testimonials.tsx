@@ -40,7 +40,7 @@ export function Testimonials() {
     <section className="relative py-12 md:py-16 lg:py-20 border-t border-border/50">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <Reveal>
-          <SectionLabel>Client Testimonials</SectionLabel>
+          <SectionLabel>Legal Quotes</SectionLabel>
         </Reveal>
 
         <div 
