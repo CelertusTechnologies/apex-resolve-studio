@@ -6,19 +6,19 @@ import { SectionLabel } from "./SectionLabel";
 
 const testimonials = [
   {
-    q: "VD Legal handled our complex corporate restructuring with remarkable precision and foresight. Vishal and his team are the first call we make for any legal matter.",
-    n: "Managing Director, Leading NBFC",
-    r: "Corporate Law",
+    q: "Injustice anywhere is a threat to justice everywhere.",
+    n: "Martin Luther King Jr.",
+    r: "Civil Rights Leader & Nobel Peace Prize Laureate",
   },
   {
-    q: "When our property dispute seemed unwinnable, VD Legal's real estate team delivered a result beyond our expectations. Their expertise and dedication are unmatched.",
-    n: "Senior Partner, Delhi Real Estate Group",
-    r: "Real Estate Law",
+    q: "At his best, man is the noblest of all animals; separated from law and justice, he is the worst.",
+    n: "Aristotle",
+    r: "Greek Philosopher & Father of Western Philosophy",
   },
   {
-    q: "The team's command of intellectual property law protected our brand at a critical juncture. Professional, responsive and thorough throughout every stage.",
-    n: "Founder, Tech Startup",
-    r: "Intellectual Property",
+    q: "Lawyers are the foot soldiers of our Constitution.",
+    n: "Ruth Bader Ginsburg",
+    r: "Associate Justice, U.S. Supreme Court",
   },
 ];
 

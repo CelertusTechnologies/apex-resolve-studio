@@ -90,8 +90,8 @@ export function Hero() {
         >
           {[
             ["15+", "Years of Experience"],
-            ["15+", "States"],
-            ["14+", "Practice Areas"],
+            ["16+", "States"],
+            ["17+", "Practice Areas"],
             ["25+", "Legal Specialists"],
           ].map(([n, l]) => (
             <div key={l} className="bg-background/40 px-6 py-7">

@@ -5,7 +5,7 @@ import supremeCourtImg from "@/assets/supreme_court.png";
 const credentials = [
   { label: "Supreme Court", sub: "& High Courts" },
   { label: "NCLT / NCLAT & PMLA", sub: "Tribunal Matters" },
-  { label: "Pan-India", sub: "15+ States" },
+  { label: "Pan-India", sub: "16+ States" },
 ];
 
 export function About() {
@@ -35,7 +35,7 @@ export function About() {
               Established under the leadership of Advocate Vishal Dabas, VD Legal represents a dynamic blend of experienced and emerging legal professionals. We are driven by a singular conviction: that every individual and institution deserves access to clear, effective, and strategic legal expertise.
             </p>
             <p className="text-base text-muted-foreground font-normal leading-relaxed mt-4 text-justify">
-              Rooted in a highly client-centric approach, we specialize in delivering tailor-made legal solutions designed to meet the unique stakes of each case. Our team maintains a strong national legal presence, proudly serving and representing clients across 15+ States.
+              Rooted in a highly client-centric approach, we specialize in delivering tailor-made legal solutions designed to meet the unique stakes of each case. Our team maintains a strong national legal presence, proudly serving and representing clients across 16+ States.
             </p>
           </Reveal>
           <Reveal delay={0.3}>

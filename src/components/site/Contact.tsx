@@ -37,7 +37,7 @@ export function Contact() {
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Office</div>
                   <div>84, Basement, Hemkunt Colony,<br />Greater Kailash Part - I,<br />New Delhi - 110048</div>
                   <div className="text-muted-foreground text-xs uppercase tracking-widest mt-4 mb-1">Chamber</div>
-                  <div>508, Lawyers' Chambers Block- III,<br />High Court Delhi,<br />New Delhi - 110003</div>
+                  <div>508, Lawyers' Chambers Block- III,<br />High Court of Delhi,<br />New Delhi - 110003</div>
                 </div>
               </div>
             </div>

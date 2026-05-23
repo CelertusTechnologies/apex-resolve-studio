@@ -30,7 +30,7 @@ function Counter({ to, suffix = "", prefix = "" }: { to: number; suffix?: string
 export function Results() {
   const stats = [
     { v: 15, s: "+", p: "", l: "Years of Experience" },
-    { v: 14, s: "+", p: "", l: "Practice Areas" },
+    { v: 17, s: "+", p: "", l: "Practice Areas" },
     { v: 9, s: "", p: "", l: "Legal Specialists" },
     { v: 6, s: "", p: "", l: "Cities Pan-India" },
   ];

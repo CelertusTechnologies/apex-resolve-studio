@@ -3,10 +3,14 @@ import vdLogo from "@/assets/vd_logo.png";
 
 export function Footer() {
   return (
-    <footer className="border-t border-gold/20 pt-12 pb-8 bg-white/60 backdrop-blur-sm">
+    <footer className="border-t border-gold/20 pt-14 pb-8 bg-white/60 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="grid lg:grid-cols-12 gap-10 pb-12">
-          <div className="lg:col-span-5 space-y-6">
+
+        {/* Main grid: brand left, links right */}
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-0 pb-14">
+
+          {/* Left: brand block */}
+          <div className="lg:w-[42%] lg:pr-16 space-y-6 flex-shrink-0">
             {/* VD Legal brand mark — matches Navbar circle style */}
             <div className="flex items-center gap-3">
               <div className="relative flex items-center justify-center h-9 w-9 rounded-full border-2 border-gold/70 bg-white/80 shadow-md overflow-hidden flex-shrink-0">
@@ -16,39 +20,39 @@ export function Footer() {
                 <span className="font-bold">VD</span> <span className="text-gold">Legal</span>
               </span>
             </div>
-            <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
+            <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Advocates &amp; Solicitors — providing top-tier legal services with
               integrity, expertise, and an unwavering commitment to justice.
               New Delhi, India.
             </p>
-            <div className="flex gap-3 pt-2">
-              <a 
-                href="https://linkedin.com/company/vdlegal" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+            <div className="flex gap-3 pt-1">
+              <a
+                href="https://linkedin.com/company/vdlegal"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2.5 border border-border rounded-full hover:bg-foreground hover:text-background transition-all"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a 
-                href="mailto:mail@vdlegal.in" 
+              <a
+                href="mailto:mail@vdlegal.in"
                 className="p-2.5 border border-border rounded-full hover:bg-foreground hover:text-background transition-all"
                 aria-label="Gmail"
               >
                 <Mail className="h-4 w-4" />
               </a>
-              <a 
-                href="https://wa.me/919873976214" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://wa.me/919873976214"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2.5 border border-border rounded-full hover:bg-foreground hover:text-background transition-all"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="h-4 w-4" />
               </a>
-              <a 
-                href="tel:+919873976214" 
+              <a
+                href="tel:+919873976214"
                 className="p-2.5 border border-border rounded-full hover:bg-foreground hover:text-background transition-all"
                 aria-label="Phone"
               >
@@ -56,61 +60,70 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <FooterCol 
-            title="Practice Areas" 
-            items={[
-              { label: "Corporate Law", href: "#practice" },
-              { label: "Real Estate & RERA", href: "#practice" },
-              { label: "Civil & Criminal Litigation", href: "#practice" },
-              { label: "PMLA / FEMA", href: "#practice" },
-              { label: "Arbitration", href: "#practice" },
-              { label: "Insolvency & Bankruptcy", href: "#practice" },
-              { label: "IPR", href: "#practice" },
-              { label: "Taxation", href: "#practice" }
-            ]} 
-          />
-          <FooterCol 
-            title="The Firm" 
-            items={[
-              { label: "About Us", href: "#about" },
-              { label: "Our Team", href: "#attorneys" },
-              { label: "Our Commitment", href: "#whyus" },
-              { label: "Careers", href: "#contact" },
-              { label: "News & Insights", href: "#contact" }
-            ]} 
-          />
-          <div className="lg:col-span-3">
-            <div className="text-xs uppercase tracking-widest text-gold/80 mb-5">Get In Touch</div>
-            <ul className="space-y-4">
-              <li>
-                <div className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Office Address</div>
-                <a href="https://maps.google.com/?q=84,+Basement,+Hemkunt+Colony,+Greater+Kailash+Part+-+I,+New+Delhi+-+110048" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-gold transition-colors duration-300">
-                  84, Basement, Hemkunt Colony,<br />
-                  Greater Kailash Part - I,<br />
-                  New Delhi - 110048
-                </a>
-              </li>
-              <li>
-                <div className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Chamber Address</div>
-                <a href="https://maps.google.com/?q=508,+Lawyers'+Chambers+Block-+III,+High+Court+Delhi,+New+Delhi-+110003" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-gold transition-colors duration-300">
-                  508, Lawyers' Chambers Block- III,<br />
-                  High Court Delhi,<br />
-                  New Delhi- 110003
-                </a>
-              </li>
-              <li className="pt-2">
-                <a href="tel:+919873976214" className="text-sm text-foreground hover:text-gold transition-colors duration-300 flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-gold/70" />
-                  +91 98739 76214
-                </a>
-              </li>
-              <li>
-                <a href="mailto:mail@vdlegal.in" className="text-sm text-foreground hover:text-gold transition-colors duration-300 flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-gold/70" />
-                  mail@vdlegal.in
-                </a>
-              </li>
-            </ul>
+
+          {/* Vertical divider */}
+          <div className="hidden lg:block w-px bg-gold/15 flex-shrink-0" />
+
+          {/* Right: The Firm + Get In Touch on same horizontal line */}
+          <div className="flex-1 lg:pl-16 flex flex-col sm:flex-row gap-12 sm:gap-0">
+
+            {/* The Firm */}
+            <div className="flex-1 sm:pt-6">
+              <div className="text-xs uppercase tracking-widest text-gold/80 mb-6">The Firm</div>
+              <ul className="space-y-3.5">
+                {[
+                  { label: "About Us", href: "#about" },
+                  { label: "Our Team", href: "#attorneys" },
+                  { label: "Our Commitment", href: "#whyus" },
+                  { label: "Careers", href: "#contact" },
+                  { label: "News & Insights", href: "#contact" },
+                ].map((item) => (
+                  <li key={item.label}>
+                    <a href={item.href} className="text-sm text-muted-foreground hover:text-gold transition-colors duration-300">
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Inner divider between The Firm and Get In Touch */}
+            <div className="hidden sm:block w-px bg-gold/15 flex-shrink-0 mx-10" />
+
+            {/* Get In Touch */}
+            <div className="flex-1">
+              <div className="text-xs uppercase tracking-widest text-gold/80 mb-6">Get In Touch</div>
+              <ul className="space-y-4">
+                <li>
+                  <div className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Office Address</div>
+                  <a href="https://maps.google.com/?q=84,+Basement,+Hemkunt+Colony,+Greater+Kailash+Part+-+I,+New+Delhi+-+110048" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-gold transition-colors duration-300 leading-relaxed">
+                    84, Basement, Hemkunt Colony,<br />
+                    Greater Kailash Part - I,<br />
+                    New Delhi - 110048
+                  </a>
+                </li>
+                <li>
+                  <div className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Chamber Address</div>
+                  <a href="https://maps.google.com/?q=508,+Lawyers'+Chambers+Block-+III,+High+Court+Delhi,+New+Delhi-+110003" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-gold transition-colors duration-300 leading-relaxed">
+                    508, Lawyers' Chambers Block- III,<br />
+                    High Court of Delhi,<br />
+                    New Delhi- 110003
+                  </a>
+                </li>
+                <li className="pt-1">
+                  <a href="tel:+919873976214" className="text-sm text-foreground hover:text-gold transition-colors duration-300 flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-gold/70" />
+                    +91 98739 76214
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:mail@vdlegal.in" className="text-sm text-foreground hover:text-gold transition-colors duration-300 flex items-center gap-2">
+                    <Mail className="h-4 w-4 text-gold/70" />
+                    mail@vdlegal.in
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -127,9 +140,9 @@ export function Footer() {
   );
 }
 
-function FooterCol({ title, items }: { title: string; items: { label: string; href: string }[] }) {
+function FooterCol({ title, items, className = "lg:col-span-2" }: { title: string; items: { label: string; href: string }[]; className?: string }) {
   return (
-    <div className="lg:col-span-2">
+    <div className={className}>
       <div className="text-xs uppercase tracking-widest text-gold/80 mb-5">{title}</div>
       <ul className="space-y-3">
         {items.map((item) => (

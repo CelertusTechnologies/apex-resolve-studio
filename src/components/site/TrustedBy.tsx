@@ -50,7 +50,7 @@ export function TrustedBy() {
                 key={i}
                 className="flex items-center justify-center px-12 lg:px-20 transition-all duration-500"
               >
-                <div className="relative h-16 w-32 lg:h-20 lg:w-40 flex items-center justify-center hover:scale-105 transition-all duration-500">
+                <div className={`relative h-16 w-32 lg:h-20 lg:w-40 flex items-center justify-center hover:scale-105 transition-all duration-500 ${logo.id === 3 ? "scale-[1.5]" : ""}`}>
                   <img
                     src={logo.src}
                     alt={logo.alt}

@@ -6,17 +6,21 @@ import ravi from "@/assets/ravi.jpeg";
 import rahul from "@/assets/rahul.jpeg";
 import sahil from "@/assets/sahil.jpeg";
 import krishna from "@/assets/krishna.jpeg";
-import hemant from "@/assets/hemant.jpeg";
 import chirasha from "@/assets/chirasha.jpeg";
 import aishwarya from "@/assets/aishwarya.jpeg";
+import jatin from "@/assets/Jatin Daral.jpeg";
+import sahir from "@/assets/sahir.jpeg";
 
 const team = [
   { img: vishalDabas, name: "Vishal Dabas", role: "Founder & Managing Partner", focus: "Corporate Law · Litigation · Arbitration", featured: true },
+  { img: krishna, name: "Mr. K.S. Chauhan", role: "Senior Advisor & Consultant", focus: "Constitutional & Civil Law Expert" },
+  { img: ravi, name: "Mr. Ravi Mehrotra", role: "Senior Advisor & Consultant", focus: "Constitutional & Appellate Advocacy Expert" },
   { img: rahul, name: "Rahul Ahlawat", role: "Senior Associate", focus: "Civil & Criminal Litigation Expert" },
-  { img: hemant, name: "Hemant Chauhan", role: "Associate", focus: "Corporate Law & Arbitration Specialist" },
   { img: sahil, name: "Sahil Dabas", role: "Associate", focus: "Real Estate & RERA Specialist" },
   { img: chirasha, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
   { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert" },
+  { img: jatin, name: "Jatin Daral", role: "Associate", focus: "Civil & Criminal Litigation Specialist" },
+  { img: sahir, name: "Sahir Gehlot", role: "Associate", focus: "Corporate Law & Dispute Resolution Specialist" },
 ];
 
 export function Attorneys() {

@@ -9,9 +9,9 @@ import { SectionLabel } from "./SectionLabel";
 const areas = [
   {
     icon: Scale,
-    title: "Civil / Criminal / Commercial Litigation",
-    desc: "Robust dispute resolution across the Supreme Court, High Courts, and specialized tribunals for all civil, criminal, and commercial matters.",
-    subs: ["Dispute Resolution", "Criminal Defense", "Commercial Claims"],
+    title: "Civil / Criminal Litigation",
+    desc: "Robust dispute resolution across the Supreme Court, High Courts, and specialized tribunals for all civil and criminal matters.",
+    subs: ["Dispute Resolution", "Criminal Defense"],
   },
   {
     icon: Building2,
