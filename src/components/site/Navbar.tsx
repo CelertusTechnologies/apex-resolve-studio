@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import vdLogo from "@/assets/vd_logo.png";
 
 const links = [
-  { href: "#about", label: "About" },
+  { href: "#about", label: "About Firm" },
   { href: "#practice", label: "Practice Areas" },
   { href: "#attorneys", label: "Our Team" },
   { href: "#contact", label: "Contact" },

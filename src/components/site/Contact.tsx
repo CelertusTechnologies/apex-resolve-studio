@@ -46,8 +46,8 @@ export function Contact() {
             <div className="aspect-video lg:aspect-[4/3] rounded-xl overflow-hidden border border-border/60 grid-bg relative">
               <iframe
                 title="VD Legal Office — New Delhi"
-                className="absolute inset-0 h-full w-full grayscale contrast-125 opacity-80"
-                src="https://maps.google.com/maps?q=84,+Hemkunt+Colony,+Greater+Kailash+Part+-+I,+New+Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                className="absolute inset-0 h-full w-full opacity-95 transition-opacity duration-300 hover:opacity-100"
+                src="https://maps.google.com/maps?q=28.549465,77.246981&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 loading="lazy"
               />
             </div>
