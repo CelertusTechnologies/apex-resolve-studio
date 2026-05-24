@@ -69,7 +69,6 @@ export function Contact() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16">
         <div className="lg:col-span-5 space-y-12">
-<<<<<<< HEAD
           <Reveal>
             <SectionLabel>Begin a Conversation</SectionLabel>
             <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient leading-[1.1]">
@@ -113,9 +112,6 @@ export function Contact() {
               />
             </div>
           </Reveal>
-=======
-          {/* LEFT SIDE CONTENT */}
->>>>>>> 094b7f55f169580c0d7227e205fa206a8eaea99f
         </div>
 
         <div className="lg:col-span-7">
