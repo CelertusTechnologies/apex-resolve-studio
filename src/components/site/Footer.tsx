@@ -1,4 +1,4 @@
-import { Linkedin, Mail, MessageCircle, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 import vdLogo from "@/assets/vd_logo.png";
 
 export function Footer() {
@@ -27,22 +27,6 @@ export function Footer() {
             </p>
             <div className="flex gap-3 pt-1">
               <a
-                href="https://linkedin.com/company/vdlegal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 border border-border rounded-full hover:bg-foreground hover:text-background transition-all"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <a
-                href="mailto:mail@vdlegal.in"
-                className="p-2.5 border border-border rounded-full hover:bg-foreground hover:text-background transition-all"
-                aria-label="Gmail"
-              >
-                <Mail className="h-4 w-4" />
-              </a>
-              <a
                 href="https://wa.me/919873976214"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,6 +41,13 @@ export function Footer() {
                 aria-label="Phone"
               >
                 <Phone className="h-4 w-4" />
+              </a>
+              <a
+                href="mailto:mail@vdlegal.in"
+                className="p-2.5 border border-border rounded-full hover:bg-foreground hover:text-background transition-all"
+                aria-label="Email"
+              >
+                <Mail className="h-4 w-4" />
               </a>
             </div>
           </div>

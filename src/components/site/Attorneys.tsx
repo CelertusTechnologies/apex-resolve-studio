@@ -1,27 +1,57 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, MessageCircle, Phone } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
 import vishalDabas from "@/assets/vishal_dabas.png";
 import ravi from "@/assets/ravi.jpeg";
 import rahul from "@/assets/rahul.jpeg";
 import sahil from "@/assets/sahil.jpeg";
-import krishna from "@/assets/krishna.jpeg";
 import ksChauhan from "@/assets/KsChauhan.jpeg";
 import chirasha from "@/assets/chirasha.jpeg";
 import aishwarya from "@/assets/aishwarya.jpeg";
 import jatin from "@/assets/Jatin Daral.jpeg";
-import sahir from "@/assets/sahir.jpeg";
+import kunal from "@/assets/kunal.jpeg";
+import ayush from "@/assets/ayush.jpeg";
+
+const VD_PHONE = "tel:+919873976214";
+const VD_WHATSAPP = "https://wa.me/919873976214";
+const VD_EMAIL = "mailto:mail@vdlegal.in";
+const VISHAL_LINKEDIN = "https://linkedin.com/company/vdlegal";
+
+const contactIconClass =
+  "p-1.5 glass rounded-full hover:bg-foreground hover:text-background transition-all border border-border";
+const contactIconClassLg =
+  "p-2.5 glass rounded-full hover:bg-foreground hover:text-background transition-all border border-border";
+
+function ContactIcons({ size = "sm" }: { size?: "sm" | "lg" }) {
+  const iconClass = size === "lg" ? "h-3.5 w-3.5" : "h-3 w-3";
+  const btnClass = size === "lg" ? contactIconClassLg : contactIconClass;
+
+  return (
+    <>
+      <a href={VD_PHONE} className={btnClass} aria-label="Call VD Legal">
+        <Phone className={iconClass} />
+      </a>
+      <a href={VD_WHATSAPP} target="_blank" rel="noopener noreferrer" className={btnClass} aria-label="WhatsApp VD Legal">
+        <MessageCircle className={iconClass} />
+      </a>
+      <a href={VD_EMAIL} className={btnClass} aria-label="Email VD Legal">
+        <Mail className={iconClass} />
+      </a>
+    </>
+  );
+}
 
 const team = [
   { img: vishalDabas, name: "Vishal Dabas", role: "Founder & Managing Partner", focus: "Corporate Law · Litigation · Arbitration", featured: true },
   { img: ksChauhan, name: "Mr. K.S. Chauhan", role: "Senior Advisor & Consultant", focus: "Constitutional & Civil Law Expert" },
   { img: ravi, name: "Mr. Ravi Mehrotra", role: "Senior Advisor & Consultant", focus: "Constitutional & Appellate Advocacy Expert" },
-  { img: rahul, name: "Rahul Ahlawat", role: "Senior Associate", focus: "Civil & Criminal Litigation Expert" },
-  { img: sahil, name: "Sahil Dabas", role: "Associate", focus: "Real Estate & RERA Specialist" },
+  { img: rahul, name: "Rahul Ahlawat", role: "Senior Partner", focus: "Civil & Criminal Litigation Expert" },
+  { img: sahil, name: "Sahil Dabas", role: "Partner", focus: "Real Estate & RERA Specialist" },
   { img: chirasha, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
   { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert", imgClassName: "object-cover object-top" },
   { img: jatin, name: "Jatin Daral", role: "Associate", focus: "Civil & Criminal Litigation Specialist" },
-  { img: sahir, name: "Sahir Gehlot", role: "Associate", focus: "Corporate Law & Dispute Resolution Specialist" },
+  { img: kunal, name: "Kunal Masiwal", role: "Associate", focus: "Litigation & Advisory" },
+  { img: ayush, name: "Ayush Rohtagi", role: "Associate", focus: "Corporate & Compliance" },
 ];
 
 export function Attorneys() {
@@ -75,10 +105,16 @@ export function Attorneys() {
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="flex gap-3">
-                    <a href="#" className="p-2.5 glass rounded-full hover:bg-foreground hover:text-background transition-all border border-border">
+                    <a
+                      href={VISHAL_LINKEDIN}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={contactIconClassLg}
+                      aria-label="Vishal Dabas on LinkedIn"
+                    >
                       <Linkedin className="h-3.5 w-3.5" />
                     </a>
-                    <a href="mailto:vishal@vdlegal.in" className="p-2.5 glass rounded-full hover:bg-foreground hover:text-background transition-all border border-border">
+                    <a href="mailto:vishal@vdlegal.in" className={contactIconClassLg} aria-label="Email Vishal Dabas">
                       <Mail className="h-3.5 w-3.5" />
                     </a>
                   </div>
@@ -109,12 +145,7 @@ export function Attorneys() {
                     <h3 className="font-serif text-xl leading-tight">{p.name}</h3>
                     <p className="text-[11px] text-muted-foreground mt-1.5 leading-snug">{p.focus}</p>
                     <div className="flex gap-2.5 mt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
-                      <a href="#" className="p-1.5 glass rounded-full hover:bg-foreground hover:text-background transition-all">
-                        <Linkedin className="h-3 w-3" />
-                      </a>
-                      <a href="#" className="p-1.5 glass rounded-full hover:bg-foreground hover:text-background transition-all">
-                        <Mail className="h-3 w-3" />
-                      </a>
+                      <ContactIcons />
                     </div>
                   </div>
                 </div>
