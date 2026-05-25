@@ -6,6 +6,7 @@ import ravi from "@/assets/ravi.jpeg";
 import rahul from "@/assets/rahul.jpeg";
 import sahil from "@/assets/sahil.jpeg";
 import krishna from "@/assets/krishna.jpeg";
+import ksChauhan from "@/assets/KsChauhan.jpeg";
 import chirasha from "@/assets/chirasha.jpeg";
 import aishwarya from "@/assets/aishwarya.jpeg";
 import jatin from "@/assets/Jatin Daral.jpeg";
@@ -13,12 +14,12 @@ import sahir from "@/assets/sahir.jpeg";
 
 const team = [
   { img: vishalDabas, name: "Vishal Dabas", role: "Founder & Managing Partner", focus: "Corporate Law · Litigation · Arbitration", featured: true },
-  { img: krishna, name: "Mr. K.S. Chauhan", role: "Senior Advisor & Consultant", focus: "Constitutional & Civil Law Expert" },
+  { img: ksChauhan, name: "Mr. K.S. Chauhan", role: "Senior Advisor & Consultant", focus: "Constitutional & Civil Law Expert" },
   { img: ravi, name: "Mr. Ravi Mehrotra", role: "Senior Advisor & Consultant", focus: "Constitutional & Appellate Advocacy Expert" },
   { img: rahul, name: "Rahul Ahlawat", role: "Senior Associate", focus: "Civil & Criminal Litigation Expert" },
   { img: sahil, name: "Sahil Dabas", role: "Associate", focus: "Real Estate & RERA Specialist" },
   { img: chirasha, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
-  { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert" },
+  { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert", imgClassName: "object-cover object-top" },
   { img: jatin, name: "Jatin Daral", role: "Associate", focus: "Civil & Criminal Litigation Specialist" },
   { img: sahir, name: "Sahir Gehlot", role: "Associate", focus: "Corporate Law & Dispute Resolution Specialist" },
 ];
@@ -100,7 +101,7 @@ export function Attorneys() {
                     width={768}
                     height={1024}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                    className={`h-full w-full transition-transform duration-700 group-hover:scale-[1.03] ${p.imgClassName ?? "object-cover"}`}
                   />
                   {/* Glass strip confined strictly to text area */}
                   <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-0 lg:translate-y-2 lg:group-hover:translate-y-0 transition-transform duration-500 bg-background/85 backdrop-blur-md border-t border-white/5">
