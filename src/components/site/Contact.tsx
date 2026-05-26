@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
+
+const MAP_EMBED =
+  "https://maps.google.com/maps?q=28.549465,77.246981&t=&z=16&ie=UTF8&iwloc=&output=embed";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -48,7 +51,6 @@ export function Contact() {
 
       if (response.ok) {
         setSent(true);
-
         setFormData({
           name: "",
           email: "",
@@ -67,67 +69,41 @@ export function Contact() {
       id="contact"
       className="relative py-12 md:py-16 lg:py-20 border-t border-border/50 overflow-hidden"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-16">
-        <div className="lg:col-span-5 space-y-12">
-          <Reveal>
-            <SectionLabel>Begin a Conversation</SectionLabel>
-            <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient leading-[1.1]">
-              Discreet.<br /><em className="text-gold not-italic font-light">Considered.</em><br />Always confidential.
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="space-y-6 text-sm">
-              <div className="flex gap-4 items-start">
-                <Phone className="h-4 w-4 text-[var(--gold)] mt-0.5" />
-                <div>
-                  <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Direct Line</div>
-                  <a href="tel:+919873976214" className="hover:text-gold transition-colors">+91 98739 76214</a>
-                </div>
-              </div>
-              <div className="flex gap-4 items-start">
-                <Mail className="h-4 w-4 text-[var(--gold)] mt-0.5" />
-                <div>
-                  <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Email</div>
-                  <a href="mailto:mail@vdlegal.in" className="hover:text-gold transition-colors">mail@vdlegal.in</a>
-                </div>
-              </div>
-              <div className="flex gap-4 items-start">
-                <MapPin className="h-4 w-4 text-[var(--gold)] mt-0.5" />
-                <div>
-                  <div className="text-muted-foreground text-xs uppercase tracking-widest mb-1">Office</div>
-                  <div>84, Basement, Hemkunt Colony,<br />Greater Kailash Part - I,<br />New Delhi - 110048</div>
-                  <div className="text-muted-foreground text-xs uppercase tracking-widest mt-4 mb-1">Chamber</div>
-                  <div>508, Lawyers' Chambers Block- III,<br />High Court of Delhi,<br />New Delhi - 110003</div>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <div className="aspect-video lg:aspect-[4/3] rounded-xl overflow-hidden border border-border/60 grid-bg relative">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <Reveal>
+          <SectionLabel>Begin a Conversation</SectionLabel>
+          <h2 className="mt-8 font-serif text-4xl md:text-5xl lg:text-6xl text-gradient leading-[1.1] max-w-2xl">
+            Discreet.<br />
+            <em className="text-gold not-italic font-light">Considered.</em>
+            <br />
+            Always confidential.
+          </h2>
+        </Reveal>
+
+        <div className="mt-10 md:mt-12 lg:mt-14 flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10 items-stretch">
+          <Reveal delay={0.1} className="w-full lg:w-[40%] shrink-0">
+            <div className="h-full min-h-[260px] sm:min-h-[320px] lg:min-h-[480px] rounded-xl overflow-hidden border border-border/60 grid-bg relative">
               <iframe
                 title="VD Legal Office — New Delhi"
                 className="absolute inset-0 h-full w-full opacity-95 transition-opacity duration-300 hover:opacity-100"
-                src="https://maps.google.com/maps?q=28.549465,77.246981&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src={MAP_EMBED}
                 loading="lazy"
               />
             </div>
           </Reveal>
-        </div>
 
-        <div className="lg:col-span-7">
-          <Reveal delay={0.15}>
+          <Reveal delay={0.15} className="w-full lg:w-[60%] min-w-0 flex-1">
             <form
               onSubmit={handleSubmit}
-              className="glass-strong rounded-2xl p-8 lg:p-12 space-y-6 shadow-luxe"
+              className="glass-strong rounded-2xl p-8 md:p-10 lg:p-12 h-full w-full flex flex-col space-y-6 shadow-luxe border border-gold/15 ring-1 ring-gold/10"
             >
-              <div className="mb-6">
-                <div className="font-serif text-2xl text-gradient mb-1">
+              <div className="mb-2">
+                <div className="font-serif text-2xl md:text-3xl text-gradient mb-1">
                   Request a Consultation
                 </div>
-
                 <p className="text-xs text-muted-foreground">
-                  All submissions are encrypted and protected by
-                  attorney-client privilege.
+                  All submissions are encrypted and protected by attorney-client
+                  privilege.
                 </p>
               </div>
 
@@ -139,7 +115,6 @@ export function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                 />
-
                 <Field
                   label="Email Address"
                   name="email"
@@ -148,7 +123,6 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                 />
-
                 <Field
                   label="Phone Number"
                   name="phone"
@@ -156,7 +130,6 @@ export function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                 />
-
                 <Field
                   label="Legal Matter Type"
                   name="type"
@@ -166,11 +139,10 @@ export function Contact() {
                 />
               </div>
 
-              <div>
+              <div className="flex-1">
                 <label className="text-xs uppercase tracking-widest text-muted-foreground">
                   Briefly describe your matter
                 </label>
-
                 <textarea
                   required
                   rows={5}
@@ -182,19 +154,17 @@ export function Contact() {
                 />
               </div>
 
-              <div className="pt-4 flex flex-wrap items-center justify-between gap-4">
-                <p className="text-xs text-muted-foreground max-w-xs">
+              <div className="pt-2 flex flex-wrap items-center justify-between gap-4">
+                <p className="text-xs text-muted-foreground max-w-sm">
                   We respond to all enquiries within 24 hours on business days.
                 </p>
-
                 <button
                   type="submit"
-                  className="group inline-flex items-center gap-3 bg-foreground text-background rounded-full pl-7 pr-3 py-3 text-sm font-medium hover:bg-foreground/90 transition-all"
+                  className="group inline-flex items-center gap-3 bg-foreground text-background rounded-full pl-7 pr-3 py-3 text-sm font-medium hover:bg-foreground/90 transition-all shrink-0"
                 >
                   {sent
                     ? "Message Received — We'll Be In Touch"
                     : "Request Consultation"}
-
                   <span className="bg-background/10 rounded-full p-1.5 group-hover:rotate-45 transition-transform duration-500">
                     <ArrowUpRight className="h-3.5 w-3.5" />
                   </span>
@@ -216,7 +186,15 @@ function Field({
   placeholder,
   value,
   onChange,
-}: any) {
+}: {
+  label: string;
+  name: string;
+  type?: string;
+  required?: boolean;
+  placeholder?: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}) {
   return (
     <div>
       <label
@@ -225,7 +203,6 @@ function Field({
       >
         {label}
       </label>
-
       <input
         id={name}
         name={name}
