@@ -30,7 +30,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.VPS_IP }}
           REMOTE_USER: ${{ secrets.VPS_USER }}
-          SOURCE: "dist/"
+          SOURCE: "dist"
           TARGET: "/var/www/apex-resolve-studio/dist"
 
       - name: Restart Nginx
