@@ -1,20 +1,9 @@
 import { Linkedin, Mail, MessageCircle, Phone } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
-import vishalDabas from "@/assets/vishal_dabas.png";
-import ravi from "@/assets/ravi.jpeg";
-import rahul from "@/assets/rahul.jpeg";
-import sahil from "@/assets/sahil.jpeg";
-import ksChauhan from "@/assets/KsChauhan.jpeg";
-import chirasha from "@/assets/chirasha.jpeg";
-import aishwarya from "@/assets/aishwarya.jpeg";
-import jatin from "@/assets/Jatin Daral.jpeg";
-import kunal from "@/assets/kunal.jpeg";
-import ayush from "@/assets/ayush.jpeg";
+import { team, VD_PHONE, VD_WHATSAPP, VD_EMAIL } from "@/data/teamData";
 
-const VD_PHONE = "tel:+919873976214";
-const VD_WHATSAPP = "https://wa.me/919873976214";
-const VD_EMAIL = "mailto:mail@vdlegal.in";
 const VISHAL_LINKEDIN = "https://linkedin.com/company/vdlegal";
 
 const contactIconClass =
@@ -41,19 +30,6 @@ function ContactIcons({ size = "sm" }: { size?: "sm" | "lg" }) {
   );
 }
 
-const team = [
-  { img: vishalDabas, name: "Vishal Dabas", role: "Founder & Managing Partner", focus: "Corporate Law · Litigation · Arbitration", featured: true },
-  { img: ksChauhan, name: "Mr. K.S. Chauhan", role: "Senior Advisor & Consultant", focus: "Constitutional & Civil Law Expert" },
-  { img: ravi, name: "Mr. Ravi Mehrotra", role: "Senior Advisor & Consultant", focus: "Constitutional & Appellate Advocacy Expert" },
-  { img: rahul, name: "Rahul Ahlawat", role: "Senior Partner", focus: "Civil & Criminal Litigation Expert" },
-  { img: sahil, name: "Sahil Dabas", role: "Partner", focus: "Real Estate & RERA Specialist" },
-  { img: chirasha, name: "Chirasha Jain", role: "Associate", focus: "Audit & Risk Consultant" },
-  { img: aishwarya, name: "Aishwarya Sharma", role: "Associate", focus: "Intellectual Property Rights Expert", imgClassName: "object-cover object-top" },
-  { img: jatin, name: "Jatin Daral", role: "Associate", focus: "Civil & Criminal Litigation Specialist" },
-  { img: kunal, name: "Kunal Masiwal", role: "Associate", focus: "Litigation & Advisory" },
-  { img: ayush, name: "Ayush Rohtagi", role: "Associate", focus: "Corporate & Compliance" },
-];
-
 export function Attorneys() {
   const founder = team[0];
   const rest = team.slice(1);
@@ -79,7 +55,11 @@ export function Attorneys() {
 
         {/* Founder — Featured large card */}
         <Reveal>
-          <div className="mb-10 group relative rounded-2xl overflow-hidden glass border border-gold/20 hover:border-gold/40 transition-all duration-500">
+          <Link
+            to="/team/$slug"
+            params={{ slug: founder.slug }}
+            className="mb-10 group relative rounded-2xl overflow-hidden glass border border-gold/20 hover:border-gold/40 transition-all duration-500 block"
+          >
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="relative aspect-[5/4] lg:aspect-auto overflow-hidden">
                 <img
@@ -104,7 +84,7 @@ export function Attorneys() {
                   legal solutions tailored to every client's needs.
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="flex gap-3">
+                  <div className="flex gap-3" onClick={(e) => e.preventDefault()}>
                     <a
                       href={VISHAL_LINKEDIN}
                       target="_blank"
@@ -122,14 +102,18 @@ export function Attorneys() {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         </Reveal>
 
         {/* Rest of the team — 3-column grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {rest.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.07}>
-              <div className="group relative">
+              <Link
+                to="/team/$slug"
+                params={{ slug: p.slug }}
+                className="group relative block"
+              >
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-card border border-border/40 hover:border-gold/30 transition-all duration-500">
                   <img
                     src={p.img}
@@ -144,12 +128,12 @@ export function Attorneys() {
                     <div className="text-[10px] uppercase tracking-[0.25em] text-gold/80 mb-1.5">{p.role}</div>
                     <h3 className="font-serif text-xl leading-tight">{p.name}</h3>
                     <p className="text-[11px] text-muted-foreground mt-1.5 leading-snug">{p.focus}</p>
-                    <div className="flex gap-2.5 mt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="flex gap-2.5 mt-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500" onClick={(e) => e.preventDefault()}>
                       <ContactIcons />
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </Reveal>
           ))}
         </div>
